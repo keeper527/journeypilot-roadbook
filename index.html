@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="jianhao-travel-planner · 路书 · 自基准骨架 9c3c6249a4 派生 · 2026-10-02">
+<title>易水湖 · 五台山 国庆自驾路书(2026-10-03 至 10-06)</title>
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --bg:#F7F5F0; --surface:#FCFBF7; --ink:#1C1B17; --ink2:#5C594E; --ink3:#8A8677;
+  --line:#E3DFD3; --accent:#2F5D43; --accent-soft:#E6EEE8; --on-accent:#F7F5F0;
+  --warn:#8A6D1F; --warn-soft:#F3EEDF;
+  --red:#b5493a; --gold:#c8a45c;
+  --radius:14px; --fs:19px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:var(--fs)}
+body{background:var(--bg);color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:var(--on-accent)}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--on-accent);padding:8px 16px;z-index:99;border-radius:0 0 8px 0;font-size:.8rem}
+.skip:focus{left:0}
+
+/* ---------- 左侧栏 ---------- */
+.side{position:fixed;inset:0 auto 0 0;width:236px;overflow-y:auto;background:#F2EEE3;border-right:1px solid var(--line);display:flex;flex-direction:column;padding:28px 22px;z-index:10}
+.logo{font-size:1.15rem;font-weight:800;letter-spacing:.02em}
+.logo span{color:var(--accent)}
+.logo-sub{font-size:.58rem;letter-spacing:.2em;color:var(--ink3);margin-top:4px;text-transform:uppercase}
+.nav-group{margin-top:26px}
+.nav-label{font-size:.6rem;letter-spacing:.2em;color:var(--ink3);text-transform:uppercase;margin-bottom:8px;padding-left:12px}
+.side nav a{display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:9px;font-size:.82rem;color:#4A473E;transition:background .2s,color .2s;margin-bottom:2px}
+.side nav a:hover{background:#E8E3D4;color:var(--ink)}
+.side nav a.on{background:var(--accent);color:var(--on-accent);font-weight:600;box-shadow:0 3px 10px rgba(47,93,67,.25)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.side-foot{margin-top:auto;font-size:.66rem;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;line-height:2}
+
+/* ---------- 主区 ---------- */
+main{margin-left:236px}
+.wrap{max-width:860px;margin:0 auto;padding:0 44px}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+.eyebrow{font-size:.62rem;letter-spacing:.24em;color:var(--accent);text-transform:uppercase;font-weight:600;margin-bottom:12px}
+h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.35;font-weight:800;max-width:16em}
+h2{font-size:clamp(1.45rem,2.7vw,1.95rem);line-height:1.35;font-weight:800}
+.lead{color:var(--ink2);margin-top:12px;max-width:34em}
+
+/* ---------- 通用卡片/标签/表格 ---------- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:14px}
+.tag{display:inline-block;font-size:.66rem;padding:3px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent);font-weight:600;margin-left:8px;vertical-align:middle}
+.tag.dim{background:transparent;border:1px solid var(--line);color:var(--ink3);font-weight:400}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+strong{color:var(--ink)}
+table.tb{width:100%;border-collapse:collapse;margin-top:14px;font-size:.85rem;background:var(--surface);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.tb th{background:#F2EEE3;text-align:left;padding:10px 12px;font-size:.78rem;color:var(--ink2);border-bottom:1px solid var(--line);white-space:nowrap}
+.tb td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top}
+.tb tr:last-child td{border-bottom:none}
+.tb td b{color:var(--ink)}
+
+/* ---------- 天气 ---------- */
+.weather{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.wday{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 12px;text-align:center}
+.wday .d{font-size:.7rem;color:var(--ink3)}
+.wday .w{font-size:.82rem;font-weight:700;margin-top:4px}
+.wday .t{font-size:.7rem;color:var(--ink2);margin-top:3px}
+
+/* ---------- 清单（可勾选） ---------- */
+.check{list-style:none;margin-top:16px}
+.check li{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;background:var(--surface);cursor:pointer;transition:background .2s}
+.check li:hover{border-color:var(--accent)}
+.check li.done{background:var(--accent-soft)}
+.check li.done .ct{text-decoration:line-through;color:var(--ink3)}
+.check input{width:22px;height:22px;margin-top:2px;accent-color:var(--accent);flex:none;cursor:pointer}
+.check .ct{font-size:.92rem}
+.check li.hot{border:2px solid var(--warn);background:var(--warn-soft)}
+.check li.hot .ct b{color:#6B5A22}
+
+/* ---------- 每日照片 ---------- */
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 16px}
+.photos.single{grid-template-columns:1fr;max-width:340px;margin-left:auto;margin-right:auto}
+@media (max-width:900px){.photos{grid-template-columns:1fr}.photos.single{max-width:100%}}
+.photos figure{margin:0}
+.photos img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:10px;display:block;border:1px solid var(--line)}
+.photos.single img{aspect-ratio:auto;object-fit:contain}
+.photos figcaption{font-size:.68rem;color:var(--ink3);margin-top:5px;line-height:1.5}
+
+/* ---------- 每日 ---------- */
+.day{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;scroll-margin-top:20px}
+.day.today{border:2px solid var(--accent);box-shadow:0 6px 24px rgba(47,93,67,.14)}
+.day-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+.day-idx{font-size:.62rem;letter-spacing:.14em;color:var(--ink3)}
+.day-head h3{font-size:1.15rem;font-weight:800}
+.today-badge{display:none;font-size:.7rem;padding:4px 12px;border-radius:99px;background:var(--accent);color:var(--on-accent);font-weight:700;align-items:center;gap:6px}
+.day.today .today-badge{display:inline-flex}
+.slot{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.slot:last-of-type{border-bottom:none}
+.slot-time{font-size:.78rem;font-weight:700;color:var(--accent);padding-top:2px}
+.slot-body{font-size:.9rem;color:var(--ink2)}
+.slot-body b,.slot-body strong{color:var(--ink);font-weight:700}
+.note-row{display:flex;gap:10px;margin-top:10px;padding:12px 14px;border-radius:10px;background:var(--accent-soft);font-size:.84rem;color:var(--ink2);align-items:flex-start}
+.note-row.photo{background:#EDF0E6}
+.note-row .ic{flex:none}
+.warn-line{margin-top:10px;padding:12px 14px;border-radius:10px;background:var(--warn-soft);font-size:.84rem;color:#6B5A22}
+
+/* ---------- 数据（预算） ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px 14px}
+.stat .n{font-size:1.5rem;font-weight:800;font-variant-numeric:tabular-nums}
+.stat .l{font-size:.72rem;color:var(--ink2);margin-top:3px}
+
+/* ---------- 提示 ---------- */
+.tips{counter-reset:tip;margin-top:16px}
+.tip{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.tip:last-child{border-bottom:none}
+.tip::before{counter-increment:tip;content:counter(tip);width:34px;height:34px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:800;font-size:.85rem;text-align:center;line-height:34px}
+.tip p{font-size:.9rem;color:var(--ink2);padding-top:5px}
+.sos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.sos{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.sos h4{font-size:.95rem;margin-bottom:8px}
+.sos p{font-size:.82rem;color:var(--ink2)}
+
+/* ---------- 工具条/返回顶部 ---------- */
+.toolbar{position:fixed;top:18px;right:20px;z-index:20;display:flex;gap:8px}
+.tbtn{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:.78rem;font-weight:700;color:var(--ink2);cursor:pointer;transition:all .2s}
+.tbtn:hover{border-color:var(--accent);color:var(--accent)}
+.backtop{position:fixed;bottom:24px;right:20px;z-index:20;width:46px;height:46px;border-radius:50%;background:var(--accent);color:var(--on-accent);border:none;font-size:1.1rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;box-shadow:0 4px 14px rgba(47,93,67,.3)}
+.backtop.show{opacity:1;pointer-events:auto}
+
+/* ---------- 入场动效 ---------- */
+html.js section .card,html.js section .day,html.js section .tip,html.js .wday,html.js .sos{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+html.js section.in .card,html.js section.in .day,html.js section.in .tip,html.js section.in .wday,html.js section.in .sos{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html.js section .card,html.js section .day,html.js section .tip,html.js .wday,html.js .sos{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:900px){
+  html{font-size:calc(var(--fs) - 1px)}
+  body{padding-bottom:76px}
+  .side{position:static;width:auto;flex-direction:row;flex-wrap:wrap;align-items:center;gap:6px;padding:12px 14px;border-right:none;border-bottom:1px solid var(--line)}
+  .logo-sub,.side-foot{display:none}
+  .nav-group{margin:0;display:flex;gap:4px;flex-wrap:wrap}
+  .nav-label{display:block;flex:1 1 100%;font-size:.58rem;letter-spacing:.16em;color:var(--ink3);margin:2px 0 4px 2px}
+  .side nav a{padding:7px 10px;font-size:.76rem}
+  .nav-group--chips{margin-top:8px;display:grid;align-items:stretch;grid-template-columns:repeat(auto-fit,minmax(78px,1fr));gap:6px}
+  .nav-group--chips>.nav-label{grid-column:1/-1;margin:0 0 1px 2px}
+  .nav-group--chips a{margin:0;padding:8px 6px;font-size:.74rem;line-height:1.3;justify-content:center;text-align:center;border:1px solid var(--line);background:var(--surface);border-radius:8px}
+  .nav-group--chips a:hover{border-color:var(--accent);background:var(--accent-soft)}
+  .nav-group--chips a.on{border-color:transparent}
+  main{margin-left:0}
+  .wrap{padding:0 18px}
+  section{padding:44px 0}
+  .weather{grid-template-columns:repeat(3,1fr)}
+  .stats{grid-template-columns:1fr 1fr}
+  .sos-grid{grid-template-columns:1fr}
+  .slot{grid-template-columns:76px 1fr;gap:10px}
+  .tb{font-size:.78rem}
+  .tb th,.tb td{padding:8px 8px}
+  .toolbar{top:auto;bottom:14px;left:14px;right:auto;flex-direction:row}
+  .tbtn{padding:7px 11px;font-size:.72rem;box-shadow:0 2px 8px rgba(0,0,0,.08);background:rgba(252,251,247,.92)}
+}
+
+/* ---------- 打印 ---------- */
+@media print{
+  .side,.toolbar,.backtop,.skip{display:none}
+  main{margin-left:0}
+  body{background:#fff;font-size:12pt}
+  .wrap{max-width:100%;padding:0}
+  section{padding:20px 0;page-break-inside:avoid}
+  .day{page-break-inside:avoid}
+  .card,.day,.tip,.wday,.sos{opacity:1;transform:none}
+  .check li.done .ct{text-decoration:none;color:var(--ink)}
+}
+
+/* ---------- 兼容层（宁波/丽水 共用，勿删） ---------- */
+b,strong{color:var(--ink)}
+.warn-line b{color:inherit}
+.tb td .intro{display:block;font-size:.78rem;color:var(--ink3);margin-top:3px;line-height:1.5}
+</style>
+</head>
+<body>
+<a class="skip" href="#overview">跳到正文</a>
+<div class="toolbar">
+  <button class="tbtn" id="fontDec" aria-label="缩小字号">A−</button>
+  <button class="tbtn" id="fontInc" aria-label="放大字号">A+</button>
+  <button class="tbtn" id="printBtn">打印</button>
+</div>
+<aside class="side">
+  <div>
+    <div class="logo">易水湖·五台山<span>.</span></div>
+    <div class="logo-sub">4 天 3 晚 · 自驾 · 2 人</div>
+  </div>
+  <nav aria-label="页面导航">
+    <div class="nav-group">
+      <div class="nav-label">行程</div>
+      <a href="#overview">总览</a>
+      <a href="#drive">路程</a>
+      <a href="#day1">第 1 天 · 易水湖</a>
+      <a href="#day2">第 2 天 · 清西陵·五台山</a>
+      <a href="#day3">第 3 天 · 台怀镇</a>
+      <a href="#day4">第 4 天 · 返程</a>
+      <a href="#boost">备选</a>
+    </div>
+    <div class="nav-group nav-group--chips">
+      <div class="nav-label">备忘</div>
+      <a href="#ticket">门票</a>
+      <a href="#tips">提示</a>
+      <a href="#stay">住宿</a>
+      <a href="#cost">预算</a>
+      <a href="#sos">应急</a>
+      <a href="#eat">美食</a>
+      <a href="#gift">特产</a>
+    </div>
+  </nav>
+  <div class="side-foot">
+    天津塘沽出发 · 10/03-10/06<br>
+    2 人 · 自驾 · 8L/100km<br>
+    信息 2026-10-02 实查
+  </div>
+</aside>
+<main>
+  <div class="wrap">
+
+    <section id="overview">
+      <div class="eyebrow">总览 · 2026 国庆 · 4 天 3 晚 · 自驾</div>
+      <h1>易水湖 · 五台山 国庆自驾路书</h1>
+      <p class="lead">塘沽 →(261km)易水湖·太行水镇(10/3 宿)→(20km)清西陵 →(267km)五台山台怀镇(10/4-10/5 宿两晚)→(402km)回津(10/6)。全程约 950-1000km,过路费 ¥0(国庆高速免费 10/1 0:00 至 10/7 24:00,以驶离时间为准)。</p>
+      <p class="lead">易水湖在保定市易县西部山区(安格庄乡),太行水镇就在湖畔约 1 公里;五台山在山西忻州市五台县,核心游览区 = 台怀镇(海拔约 1700 米),从南线进山。节奏:睡饱出发、台怀镇两晚不挪窝、核心寺庙群一天走透,黛螺顶俯瞰台怀镇是全程高光。</p>
+      <figure style="margin:24px 0 0">
+        <svg viewBox="0 0 360 470" role="img" aria-label="行程主线示意" style="display:block;width:100%;max-width:420px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:10px;background:#F6F3EA">
+          <path d="M52 64 V430" stroke="#2F5D43" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round" opacity=".55"/>
+          <circle cx="52" cy="64" r="16" fill="#2F5D43"/>
+          <text x="52" y="69" text-anchor="middle" font-size="14" font-weight="700" fill="#F7F5F0">起</text>
+          <text x="84" y="60" font-size="16" font-weight="700" fill="#1C1B17">塘沽 · 河南里出发</text>
+          <text x="84" y="80" font-size="12.5" fill="#8A8677">10/3 早上 · 261km → 易水湖</text>
+          <g transform="translate(300,50)" fill="#2F5D43">
+            <rect x="0" y="10" width="34" height="12" rx="5"/>
+            <path d="M7 10 L11 2 L23 2 L27 10 Z"/>
+            <rect x="12" y="4" width="10" height="5" rx="2" fill="#F6F3EA"/>
+            <circle cx="8" cy="24" r="4" fill="#1C1B17"/><circle cx="26" cy="24" r="4" fill="#1C1B17"/>
+          </g>
+          <circle cx="52" cy="190" r="16" fill="#C8A45C"/>
+          <text x="52" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#F7F5F0">1</text>
+          <text x="84" y="186" font-size="16" font-weight="700" fill="#1C1B17">易水湖 · 太行水镇</text>
+          <text x="84" y="206" font-size="12.5" fill="#8A8677">10/3 宿 · 游船 15:30 停止登船</text>
+          <g transform="translate(296,166)">
+            <path d="M0 14 Q7 6 14 14 T28 14 T42 14" stroke="#2F5D43" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M0 24 Q7 16 14 24 T28 24 T42 24" stroke="#2F5D43" stroke-width="3" fill="none" stroke-linecap="round" opacity=".5"/>
+            <circle cx="34" cy="2" r="6" fill="#C8A45C"/>
+          </g>
+          <circle cx="52" cy="252" r="9" fill="#fff" stroke="#C8A45C" stroke-width="3"/>
+          <text x="84" y="248" font-size="13" font-weight="700" fill="#5C594E">清西陵(顺路 20km · 可舍)</text>
+          <text x="84" y="266" font-size="11.5" fill="#8A8677">10/4 上午 · 泰陵+崇陵 或直接跳过</text>
+          <circle cx="52" cy="318" r="16" fill="#C8A45C"/>
+          <text x="52" y="323" text-anchor="middle" font-size="14" font-weight="700" fill="#F7F5F0">2</text>
+          <text x="84" y="314" font-size="16" font-weight="700" fill="#1C1B17">五台山台怀镇(住两晚)</text>
+          <text x="84" y="334" font-size="12.5" fill="#8A8677">10/4-10/5 · 267km(或直走 225km)</text>
+          <g transform="translate(300,296)">
+            <path d="M4 32 a11 11 0 0 1 22 0 z" fill="#FCFBF7" stroke="#C7C2B4"/>
+            <rect x="2" y="32" width="26" height="6" rx="2" fill="#EFEAE0"/>
+            <rect x="13" y="14" width="4" height="10" fill="#C8A45C"/>
+            <path d="M9 14 h12 l-6 -9 Z" fill="#C8A45C"/>
+          </g>
+          <circle cx="52" cy="430" r="16" fill="#2F5D43"/>
+          <text x="52" y="435" text-anchor="middle" font-size="14" font-weight="700" fill="#F7F5F0">3</text>
+          <text x="84" y="426" font-size="16" font-weight="700" fill="#1C1B17">回津 · 到家</text>
+          <text x="84" y="446" font-size="12.5" fill="#8A8677">10/6 · 402km · 09:30-10:00 出发</text>
+          <g transform="translate(304,416)" fill="#2F5D43">
+            <path d="M0 14 L14 2 L28 14 V30 H0 Z"/>
+            <rect x="10" y="20" width="8" height="10" rx="2" fill="#F6F3EA"/>
+          </g>
+        </svg>
+        <figcaption style="font-size:.72rem;color:var(--ink3);margin-top:6px;line-height:1.5">行程主线(示意):塘沽 → 易水湖 → 清西陵 → 五台山 → 回津;车程数字见「路程与停车」总表。</figcaption>
+      </figure>
+      <div class="warn-line">⚠️ 三件硬提醒:五台山<b>门票 + 车辆进山都要预约</b>(公众号「五台山游客服务中心」,现场不售票,车辆每日限约 2000 台——10/2-10/3 内就办);台怀镇夜里<b>按 0℃ 以下准备</b>(羽绒服必带);易水湖 <b>15:30 停止检票登船</b>。</div>
+      <div class="weather">
+        <div class="wday"><div class="d">10/3 六 · 易水湖</div><div class="w">晴</div><div class="t">26 / 9℃</div></div>
+        <div class="wday"><div class="d">10/4 日 · 台怀镇</div><div class="w">晴</div><div class="t">19 / 0℃</div></div>
+        <div class="wday"><div class="d">10/5 一 · 台怀镇</div><div class="w">晴</div><div class="t">20 / 2℃</div></div>
+      </div>
+      <p style="font-size:.78rem;color:var(--ink3);margin-top:8px">天气来源:高德天气 2026-10-02 实查(忻州城区口径,台怀镇海拔更高、山谷更冷);10/6 预报未出(10/4 后再查);出发前每晚再核一次。</p>
+      <div class="card" id="prepCard" style="margin-top:22px">
+        <h3 style="font-size:1.05rem">🚨 出发前必办(10/2-10/3,按顺序办)</h3>
+        <ul class="check">
+          <li class="hot"><input type="checkbox" id="ck1"><span class="ct"><b>五台山门票预约</b>(10/4 进山):公众号「五台山游客服务中心」实名预约,135 元/人;<b>国庆期间不执行工作日免票,现场不售票</b>,约满即止。</span></li>
+          <li class="hot"><input type="checkbox" id="ck2"><span class="ct"><b>五台山车辆进山预约</b>:同一公众号,<b>先买门票再约车</b>;提前 5 天内可分时预约,<b>每日限约 2000 台</b>——约不上车就停南线停车场换公交上镇。</span></li>
+          <li class="hot"><input type="checkbox" id="ck3"><span class="ct"><b>订酒店</b>:10/3 晚易水湖畔民宿 + 10/4-10/5 两晚五台山(见住宿区)。国庆房紧,再拖要么涨价要么满房。</span></li>
+          <li><input type="checkbox" id="ck4"><span class="ct"><b>易水湖门票</b>:携程/美团/抖音线上买(约 130-135 元/人,现场 140),提前 1 天买好、<b>看清日期档</b>。</span></li>
+          <li><input type="checkbox" id="ck5"><span class="ct"><b>车辆</b>:出发前加满油、查胎压玻璃水;进山前(五台县城/石咀)再补满一次——最后一段连续爬坡,山上加油站少。</span></li>
+          <li><input type="checkbox" id="ck6"><span class="ct"><b>天气终判</b>:10/2 晚和 10/4 各看一次五台山山区预报(10 月山区可能霜冻/初雪)。</span></li>
+        </ul>
+      </div>
+      <div class="card" id="gear">
+        <h3 style="font-size:1.05rem">🎒 装备清单(本趟特有优先)</h3>
+        <p style="font-size:.8rem;color:var(--ink3);margin-top:6px">本趟特有(先装这些)</p>
+        <ul class="check">
+          <li><input type="checkbox" id="ck7"><span class="ct">🧥 羽绒服/厚冲锋衣 + 抓绒 + 秋裤(台怀镇早晚 0℃ 上下,别赌)</span></li>
+          <li><input type="checkbox" id="ck8"><span class="ct">🧣 帽子、手套、围巾(清晨五爷庙排队用)</span></li>
+          <li><input type="checkbox" id="ck9"><span class="ct">👟 走路舒服的鞋(黛螺顶 1080 级台阶 / 老子峰栈道)</span></li>
+          <li><input type="checkbox" id="ck10"><span class="ct">🧴 防晒霜 + 润唇膏 + 面霜(山区干+紫外线强)</span></li>
+          <li><input type="checkbox" id="ck11"><span class="ct">🥤 保温杯(山上随时喝热水)</span></li>
+          <li><input type="checkbox" id="ck12"><span class="ct">💵 少量现金(香火随喜/小摊,山区信号一般)</span></li>
+          <li><input type="checkbox" id="ck13"><span class="ct">☂️ 折叠伞(10/3 天津段小雨)</span></li>
+          <li><input type="checkbox" id="ck14"><span class="ct">🔌 充电宝 + 车充</span></li>
+        </ul>
+        <p style="font-size:.8rem;color:var(--ink3);margin-top:10px">通用项</p>
+        <ul class="check">
+          <li><input type="checkbox" id="ck15"><span class="ct">身份证、驾驶证/行驶证、ETC(所有门票实名)</span></li>
+          <li><input type="checkbox" id="ck16"><span class="ct">常用药:感冒/肠胃/晕车/创可贴</span></li>
+          <li><input type="checkbox" id="ck17"><span class="ct">车:胎压玻璃水检查完 + 拖车绳/搭电线(备而不用)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="drive">
+      <div class="eyebrow">行 · 自驾</div>
+      <h2>路程与停车</h2>
+      <p class="lead">全程约 950-1000km(含镇内短驳),按 8L/100km 估油费。</p>
+      <table class="tb">
+        <tr><th>段</th><th>路线要点</th><th>里程</th><th>正常耗时</th><th>国庆预留</th></tr>
+        <tr><td><b>塘沽 → 易水湖</b></td><td>S50 津晋 → G18 荣乌 → 易县 → 龙西公路(隧道群)</td><td>261 km</td><td>3h45m</td><td>4.5-5h</td></tr>
+        <tr><td><b>水镇 → 清西陵</b></td><td>龙西公路 → 京环线</td><td>20 km</td><td>46min</td><td>1h</td></tr>
+        <tr><td><b>清西陵 → 五台山南线</b></td><td>G9511 涞涞 → G5 京昆 → G1812 沧榆 → 太行一号公路 → 砂石线</td><td>267 km</td><td>3h20m</td><td>4h</td></tr>
+        <tr><td><b>易水湖 → 五台山</b>(备选直走)</td><td>G18 → S31 涞曲 → G1812 沧榆</td><td>225 km</td><td>3h52m</td><td>4.5h</td></tr>
+        <tr><td><b>南线 → 台怀镇</b></td><td>砂石线山路</td><td>~15 km</td><td>25-35min</td><td>公交/自驾</td></tr>
+        <tr><td><b>五台山 → 塘沽</b></td><td>G1812 沧榆 → G0211 津石</td><td>402 km</td><td>4h45m</td><td>5.5-6h</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">⛽</span><div>油费:按 8L/100km、92# 约 7.5 元/L 估 ≈ <b>¥600</b>(估算,以当日油价为准)。<b>过路费 ¥0</b>——国庆免费 10/1 0:00 至 10/7 24:00(7 座以下,以驶离时间为准)。</div></div>
+      <h3 style="margin-top:26px">台怀镇内:车停外围,靠腿 + 景区公交</h3>
+      <p style="font-size:.88rem;color:var(--ink2);margin-top:8px">核心寺庙群(五爷庙—塔院寺—显通寺—菩萨顶—罗睺寺—殊像寺)全部在<b>步行 3-15 分钟圈</b>内,黛螺顶过清水河桥再走 20-30 分钟;车停民宿或镇外围停车场,逛街靠腿,带上厚外套(山上风大)。</p>
+      <table class="tb">
+        <tr><th>进镇方式</th><th>花费</th><th>耗时</th><th>说明</th></tr>
+        <tr><td><b>自驾进镇</b>(需预约)</td><td>停车约 20 元/天</td><td>南线 25-35min</td><td>先办好车辆进山预约;每日限约 2000 台</td></tr>
+        <tr><td><b>南线停车场换公交</b></td><td>多篇攻略称 24h 免费接驳(口径见门票表)</td><td>约 30min</td><td>没约到车的兜底;末班时刻向酒店确认</td></tr>
+        <tr><td><b>住石咀每日进出</b></td><td>油费;停车另计</td><td>15km 山路 25-35min</td><td>选 B 档酒店(¥291/晚)的代价,夜景看不了太晚</td></tr>
+      </table>
+      <figure style="margin-top:22px">
+        <svg viewBox="0 0 400 340" role="img" aria-label="台怀镇步行导览示意" style="display:block;width:100%;max-width:440px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:10px;background:#F6F3EA">
+          <path d="M262 20 C256 90 268 150 262 210 C258 260 266 300 262 340" stroke="#CFE0E8" stroke-width="16" fill="none" opacity=".85"/>
+          <path d="M262 20 C256 90 268 150 262 210 C258 260 266 300 262 340" stroke="#DCEBEF" stroke-width="7" fill="none"/>
+          <ellipse cx="124" cy="104" rx="60" ry="36" fill="#EAE4D5"/>
+          <ellipse cx="124" cy="112" rx="44" ry="24" fill="#E2DBC8" opacity=".8"/>
+          <rect x="56" y="200" width="192" height="8" fill="#E7E1D2"/>
+          <rect x="248" y="194" width="28" height="14" rx="3" fill="#E2DCCE" stroke="#CFC7B6"/>
+          <path d="M150 216 L150 178 L138 140 L112 98 M138 140 L176 122 M150 216 L86 238 M150 216 L244 204 L262 200 M262 200 L272 196 L268 190 L280 186 L276 182 L292 188 L312 190 M244 204 C242 152 238 100 236 58" stroke="#2F5D43" stroke-width="2.5" stroke-dasharray="7 6" fill="none" opacity=".65"/>
+          <g transform="translate(194,162)">
+            <path d="M2 14 a7 7 0 0 1 14 0 z" fill="#FCFBF7" stroke="#C7C2B4"/>
+            <rect x="1" y="14" width="16" height="4" rx="1" fill="#EFEAE0"/>
+            <rect x="7.5" y="5" width="3" height="6" fill="#C8A45C"/>
+            <path d="M5 5 h8 l-4 -5 Z" fill="#C8A45C"/>
+          </g>
+          <g transform="translate(372,60)"><circle r="15" fill="#FCFBF7" stroke="#E3DFD3"/><path d="M0 -9 L5 7 L0 4 L-5 7 Z" fill="#2F5D43"/><text y="-24" text-anchor="middle" font-size="11.5" fill="#5C594E">北</text></g>
+          <g font-size="12" fill="#F7F5F0" text-anchor="middle">
+            <circle cx="150" cy="216" r="10" fill="#2F5D43"/><text x="150" y="220">1</text>
+            <circle cx="150" cy="178" r="10" fill="#2F5D43"/><text x="150" y="182">2</text>
+            <circle cx="138" cy="140" r="10" fill="#2F5D43"/><text x="138" y="144">3</text>
+            <circle cx="112" cy="98" r="10" fill="#2F5D43"/><text x="112" y="102">4</text>
+            <circle cx="176" cy="122" r="10" fill="#2F5D43"/><text x="176" y="126">5</text>
+            <circle cx="86" cy="238" r="10" fill="#2F5D43"/><text x="86" y="242">6</text>
+            <circle cx="312" cy="190" r="10" fill="#2F5D43"/><text x="312" y="194">7</text>
+            <circle cx="236" cy="58" r="10" fill="#2F5D43"/><text x="236" y="62">8</text>
+          </g>
+          <g font-size="12" fill="#3A382F">
+            <rect x="160" y="226" width="64" height="22" rx="11" fill="#FCFBF7" stroke="#E3DFD3"/><text x="192" y="241" text-anchor="middle">五爷庙</text>
+            <rect x="66" y="166" width="64" height="22" rx="11" fill="#FCFBF7" stroke="#E3DFD3"/><text x="98" y="181" text-anchor="middle">塔院寺</text>
+            <rect x="50" y="148" width="64" height="22" rx="11" fill="#FCFBF7" stroke="#E3DFD3"/><text x="82" y="163" text-anchor="middle">显通寺</text>
+            <rect x="74" y="112" width="64" height="22" rx="11" fill="#FCFBF7" stroke="#E3DFD3"/><text x="106" y="127" text-anchor="middle">菩萨顶</text>
+            <rect x="190" y="112" width="64" height="22" rx="11" fill="#FCFBF7" stroke="#E3DFD3"/><text x="222" y="127" text-anchor="middle">罗睺寺</text>
+            <rect x="8" y="228" width="64" height="22" rx="11" fill="#FCFBF7" stroke="#E3DFD3"/><text x="40" y="243" text-anchor="middle">殊像寺</text>
+            <rect x="246" y="212" width="142" height="22" rx="11" fill="#FCFBF7" stroke="#E3DFD3"/><text x="317" y="227" text-anchor="middle">黛螺顶 · 1080 级台阶</text>
+            <rect x="250" y="44" width="64" height="22" rx="11" fill="#FCFBF7" stroke="#E3DFD3"/><text x="282" y="59" text-anchor="middle">广化寺</text>
+          </g>
+          <text x="200" y="330" font-size="11.5" fill="#8A8677" text-anchor="middle">↓ 南线验票口 · 停车场(约 15km 山路,车需预约)</text>
+        </svg>
+        <figcaption style="font-size:.72rem;color:var(--ink3);margin-top:6px;line-height:1.5">台怀镇核心寺庙步行导览(示意 · 非等比例,方位已对照真实地图):①五爷庙 → ②塔院寺(大白塔) → ③显通寺 → ④菩萨顶,⑤罗睺寺/⑥殊像寺顺路补,过桥到 ⑦黛螺顶,⑧广化寺在镇北;清水河贯穿镇中。</figcaption>
+      </figure>
+    </section>
+
+    <section id="day1">
+      <div class="day">
+        <div class="day-head">
+          <span class="day-idx">DAY 1 · 10/3(周六)</span>
+          <h3>塘沽 → 易水湖 · 太行水镇</h3>
+          <span class="today-badge">● 今天</span>
+        </div>
+        <div class="photos">
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="易水湖画舫示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F6F3EA">
+              <circle cx="486" cy="86" r="46" fill="#E7C878" opacity=".18"/>
+              <circle cx="486" cy="86" r="30" fill="#E7C878"/>
+              <path d="M0 206 L92 152 L172 198 L262 142 L352 194 L432 158 L522 200 L600 172 L600 268 L0 268 Z" fill="#DCE4D9"/>
+              <path d="M300 222 L382 152 L452 206 L522 168 L600 212 L600 300 L300 300 Z" fill="#C9D6C6"/>
+              <path d="M470 228 L520 150 L562 198 L600 174 L600 272 L470 272 Z" fill="#AFBFA9"/>
+              <path d="M470 228 L520 150 L562 198" fill="none" stroke="#2F5D43" stroke-width="3" opacity=".35"/>
+              <rect x="0" y="258" width="600" height="142" fill="#E3EDE4"/>
+              <path d="M24 300 Q64 292 104 300 T184 300 T264 300 T344 300 T424 300 T504 300 T584 300" fill="none" stroke="#2F5D43" stroke-width="2" opacity=".22"/>
+              <path d="M44 338 Q94 330 144 338 T244 338 T344 338 T444 338 T544 338" fill="none" stroke="#2F5D43" stroke-width="2" opacity=".15"/>
+              <path d="M148 122 q9 -9 18 0 M172 112 q9 -9 18 0 M196 122 q9 -9 18 0" stroke="#5C594E" stroke-width="2.5" fill="none" opacity=".55"/>
+              <path d="M212 296 L388 296 L366 320 L234 320 Z" fill="#4A463C"/>
+              <rect x="254" y="266" width="94" height="30" rx="7" fill="#C8A45C"/>
+              <rect x="254" y="266" width="94" height="9" rx="4" fill="#2F5D43" opacity=".5"/>
+              <rect x="298" y="238" width="6" height="30" fill="#4A463C"/>
+              <path d="M304 240 L332 250 L304 260 Z" fill="#C8A45C" opacity=".85"/>
+              <path d="M228 330 h144" stroke="#2F5D43" stroke-width="3" opacity=".25"/>
+              <path d="M40 400 q6 -42 2 -72 M58 400 q-4 -36 4 -64 M76 400 q8 -32 2 -58" stroke="#2F5D43" stroke-width="3" fill="none" opacity=".45"/>
+            </svg>
+            <figcaption>易水湖 · 湖上画舫与老子峰(示意)</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="太行水镇夜景示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#26332C">
+              <rect width="600" height="400" fill="#26332C"/>
+              <circle cx="498" cy="72" r="40" fill="#E7C878" opacity=".12"/>
+              <circle cx="498" cy="72" r="22" fill="#E7C878" opacity=".9"/>
+              <circle cx="120" cy="60" r="2" fill="#E7C878" opacity=".7"/>
+              <circle cx="200" cy="44" r="2" fill="#E7C878" opacity=".5"/>
+              <circle cx="300" cy="70" r="2" fill="#E7C878" opacity=".6"/>
+              <circle cx="392" cy="48" r="2" fill="#E7C878" opacity=".5"/>
+              <path d="M0 216 L128 192 L128 400 L0 400 Z" fill="#1B2620"/>
+              <path d="M600 216 L472 192 L472 400 L600 400 Z" fill="#1B2620"/>
+              <path d="M128 210 L150 192 L150 216 Z" fill="#141C17"/>
+              <path d="M472 210 L450 192 L450 216 Z" fill="#141C17"/>
+              <path d="M136 252 Q226 276 300 268" stroke="#8A8677" stroke-width="1.5" fill="none" opacity=".5"/>
+              <path d="M464 252 Q374 276 300 268" stroke="#8A8677" stroke-width="1.5" fill="none" opacity=".5"/>
+              <circle cx="160" cy="262" r="12" fill="#E7C878" opacity=".16"/><circle cx="160" cy="262" r="6" fill="#E7C878"/>
+              <circle cx="200" cy="270" r="12" fill="#E7C878" opacity=".16"/><circle cx="200" cy="270" r="6" fill="#E7C878"/>
+              <circle cx="240" cy="273" r="12" fill="#E7C878" opacity=".16"/><circle cx="240" cy="273" r="6" fill="#E7C878"/>
+              <circle cx="280" cy="271" r="12" fill="#E7C878" opacity=".16"/><circle cx="280" cy="271" r="6" fill="#E7C878"/>
+              <circle cx="440" cy="262" r="12" fill="#E7C878" opacity=".16"/><circle cx="440" cy="262" r="6" fill="#E7C878"/>
+              <circle cx="400" cy="270" r="12" fill="#E7C878" opacity=".16"/><circle cx="400" cy="270" r="6" fill="#E7C878"/>
+              <circle cx="360" cy="273" r="12" fill="#E7C878" opacity=".16"/><circle cx="360" cy="273" r="6" fill="#E7C878"/>
+              <circle cx="320" cy="271" r="12" fill="#E7C878" opacity=".16"/><circle cx="320" cy="271" r="6" fill="#E7C878"/>
+              <path d="M272 268 L272 330 L328 330 L328 268 L318 268 L318 252 L282 252 L282 268 Z" fill="#141C17"/>
+              <rect x="292" y="300" width="16" height="30" rx="8" fill="#26332C"/>
+              <g stroke="#E7C878" stroke-linecap="round" opacity=".9" fill="none">
+                <path d="M300 344 L278 252" stroke-width="2" opacity=".8"/>
+                <path d="M300 344 L262 276" stroke-width="2" opacity=".6"/>
+                <path d="M300 344 L255 300" stroke-width="2"/>
+                <path d="M300 344 L270 328" stroke-width="2" opacity=".7"/>
+                <path d="M300 344 L322 258" stroke-width="2" opacity=".8"/>
+                <path d="M300 344 L338 276" stroke-width="2" opacity=".6"/>
+                <path d="M300 344 L345 300" stroke-width="2"/>
+                <path d="M300 344 L330 328" stroke-width="2" opacity=".7"/>
+              </g>
+              <circle cx="300" cy="348" r="4" fill="#E7C878"/>
+              <circle cx="300" cy="348" r="10" fill="#E7C878" opacity=".25"/>
+            </svg>
+            <figcaption>太行水镇 · 灯笼长街与夜演(示意)</figcaption>
+          </figure>
+        </div>
+        <div class="note-row"><span class="ic">🧭</span><div><b>今日速览:</b>07:30-08:00 出发 → 12:15 前后到 → 午餐 → 14:00 上船(15:30 停止登船)→ 16:30 回岸 → 18:30 水镇夜游+晚餐 → 21:00 回民宿早歇。</div></div>
+        <div class="note-row"><span class="ic">🎯</span><div><b>今日必玩:</b>易水湖画舫游船(15:30 停止登船,本日锚点)+ 老子峰栈道;傍晚太行水镇夜游(亮灯+打铁花,周六+假期大概率有)。</div></div>
+        <div class="note-row"><span class="ic">✂️</span><div><b>可舍(砍它换什么):</b>老子峰栈道(体力一般/时间紧 → 只坐船,省 1h);打铁花夜演(散场晚、站着等累 → 早回民宿,给 10/4 进山留体力);特意绕易县吃驴肉(→ 水镇就地吃)。</div></div>
+        <div class="slot"><div class="slot-time">07:00</div><div class="slot-body"><b>早餐 · 出发前</b>:在塘沽吃好早点(或高速服务区对付一口);天津段预报小雨,伞放顺手处。</div></div>
+        <div class="slot"><div class="slot-time">07:30-08:00</div><div class="slot-body"><b>出发</b>:塘沽河南里 → S50 津晋 → G18 荣乌 → 易县 → 龙西公路;261km,正常 3h45m,国庆预留 4.5-5h。山区隧道群(三尖岭/花椒峪/安格庄),注意限速、开车灯。</div></div>
+        <div class="slot"><div class="slot-time">12:15 前后</div><div class="slot-body"><b>抵达 + 午餐</b>:太行水镇美食街(炖大鱼、缸炉烧饼);顺路由易县「闫家驴肉老店」驴肉火烧+杂粥,人均约 30。更多选择在美食清单。</div></div>
+        <div class="slot"><div class="slot-time">14:00</div><div class="slot-body"><b>上船(本日锚点)</b>:大坝码头(离水镇最近、船程最短),门船联票乘画舫入湖 + 老子峰悬空栈道,约 2.5-3h;<b>15:30 停止检票登船,务必那之前上船</b>。</div></div>
+        <div class="slot"><div class="slot-time">16:30</div><div class="slot-body"><b>回岸</b>:湖边歇脚、拍水色;回民宿放东西、加衣服(山区傍晚转凉)。</div></div>
+        <div class="slot"><div class="slot-time">18:30</div><div class="slot-body"><b>夜游 + 晚餐</b>:水镇亮灯、小吃街晚餐;周六+假期大概率有打铁花/夜演。</div></div>
+        <div class="slot"><div class="slot-time">21:00</div><div class="slot-body"><b>回民宿早歇</b>:给 10/4 的进山日留体力。</div></div>
+        <div class="note-row"><span class="ic">🚇</span><div><b>今日交通:</b>自驾 261km;天津段小雨慢开;易水湖各码头/水镇停车场均约 10 元/天。</div></div>
+        <div class="note-row photo"><span class="ic">📷</span><div><b>今日拍:</b>湖上画舫逆光、老子峰栈道、水镇灯笼长街 + 打铁花(手机长曝光 1-2s)。</div></div>
+        <div class="note-row"><span class="ic">🛏</span><div><b>住:</b>易水湖畔/太行水镇民宿(5 家参考价在住宿区);订房四问:大床 / 热水暖气 / 停车位 / 离大坝码头多远。</div></div>
+        <div class="note-row"><span class="ic">🅿️</span><div><b>停车:</b>易水湖各码头停车场约 10 元/天;太行水镇停车场约 10 元/天。大坝码头离水镇最近。</div></div>
+        <div class="warn-line"><b>🛟 Plan B:</b>若 15:30 前没赶上船 → 10/3 晚只逛水镇,<b>10/4 早上 08:00 首班船补游湖</b>(清西陵自动取消,出发顺延,直接开赴五台山,15:30 前后可到台怀镇)。</div>
+      </div>
+    </section>
+
+    <section id="day2">
+      <div class="day">
+        <div class="day-head">
+          <span class="day-idx">DAY 2 · 10/4(周日)</span>
+          <h3>清西陵 → 五台山 · 台怀镇</h3>
+          <span class="today-badge">● 今天</span>
+        </div>
+        <div class="photos">
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="清西陵泰陵示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F6F3EA">
+              <circle cx="96" cy="74" r="40" fill="#E7C878" opacity=".15"/>
+              <circle cx="96" cy="74" r="26" fill="#E7C878"/>
+              <path d="M0 232 L120 178 L240 228 L360 172 L500 226 L600 190 L600 268 L0 268 Z" fill="#DCE4D9"/>
+              <ellipse cx="300" cy="118" rx="86" ry="40" fill="#C9D6C6"/>
+              <circle cx="262" cy="108" r="8" fill="#AFBFA9"/><circle cx="330" cy="102" r="9" fill="#AFBFA9"/><circle cx="300" cy="126" r="7" fill="#AFBFA9"/>
+              <rect x="268" y="150" width="64" height="72" fill="#A2604E"/>
+              <path d="M254 152 L300 120 L346 152 Z" fill="#2E4A3C"/>
+              <path d="M254 152 L300 120 L346 152" fill="none" stroke="#C8A45C" stroke-width="2" opacity=".7"/>
+              <rect x="288" y="186" width="24" height="36" rx="3" fill="#4A3A34"/>
+              <rect x="238" y="222" width="124" height="64" fill="#A2604E"/>
+              <path d="M222 224 L300 182 L378 224 Z" fill="#2E4A3C"/>
+              <path d="M222 224 L300 182 L378 224" fill="none" stroke="#C8A45C" stroke-width="2.5" opacity=".7"/>
+              <rect x="252" y="244" width="22" height="42" rx="3" fill="#4A3A34"/>
+              <rect x="289" y="244" width="22" height="42" rx="3" fill="#4A3A34"/>
+              <rect x="326" y="244" width="22" height="42" rx="3" fill="#4A3A34"/>
+              <path d="M0 264 h238 v22 H0 Z" fill="#A2604E"/>
+              <path d="M362 264 h238 v22 H362 Z" fill="#A2604E"/>
+              <rect x="0" y="260" width="238" height="6" fill="#8A4B3C" opacity=".7"/>
+              <rect x="362" y="260" width="238" height="6" fill="#8A4B3C" opacity=".7"/>
+              <rect x="0" y="286" width="600" height="114" fill="#E8E2D3"/>
+              <path d="M258 400 L276 286 L324 286 L342 400 Z" fill="#E2DCCE"/>
+              <path d="M276 286 L258 400 M324 286 L342 400" stroke="#CFC7B6" stroke-width="1.5"/>
+              <rect x="266" y="316" width="8" height="16" rx="2" fill="#CFC7B6"/>
+              <rect x="326" y="316" width="8" height="16" rx="2" fill="#CFC7B6"/>
+              <rect x="262" y="356" width="8" height="18" rx="2" fill="#CFC7B6"/>
+              <rect x="330" y="356" width="8" height="18" rx="2" fill="#CFC7B6"/>
+              <path d="M56 346 l20 -66 l20 66 Z" fill="#2F5D43"/>
+              <path d="M62 316 l14 -46 l14 46 Z" fill="#2F5D43" opacity=".8"/>
+              <path d="M508 346 l20 -66 l20 66 Z" fill="#2F5D43"/>
+              <path d="M514 316 l14 -46 l14 46 Z" fill="#2F5D43" opacity=".8"/>
+              <rect x="73" y="346" width="6" height="16" fill="#4A463C"/>
+              <rect x="525" y="346" width="6" height="16" fill="#4A463C"/>
+              <path d="M110 372 l16 -54 l16 54 Z" fill="#3E5C46" opacity=".8"/>
+              <path d="M448 372 l16 -54 l16 54 Z" fill="#3E5C46" opacity=".8"/>
+            </svg>
+            <figcaption>清西陵 · 泰陵大红门与古松林(示意)</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="进山盘山路示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F4EFE2">
+              <circle cx="498" cy="84" r="40" fill="#E7C878" opacity=".16"/>
+              <circle cx="498" cy="84" r="24" fill="#E7C878"/>
+              <path d="M0 210 L130 150 L260 206 L380 146 L480 200 L600 160 L600 250 L0 250 Z" fill="#DCE4D9"/>
+              <path d="M0 260 L150 216 L300 260 L450 210 L600 252 L600 320 L0 320 Z" fill="#C9D6C6"/>
+              <path d="M0 316 L120 286 L260 322 L420 284 L600 316 L600 400 L0 400 Z" fill="#AFBFA9"/>
+              <path d="M-10 384 C130 372 210 340 270 306 C330 272 320 240 380 220 C440 200 500 196 610 192 L610 214 C505 220 452 226 402 246 C352 266 362 294 306 326 C250 358 150 386 -10 398 Z" fill="#E2DCCE"/>
+              <path d="M6 390 C150 376 224 344 282 310 C340 276 332 246 390 226 C444 208 500 204 600 200" stroke="#C8A45C" stroke-width="3" stroke-dasharray="14 12" fill="none" opacity=".8"/>
+              <path d="M350 168 a26 26 0 0 1 52 0 v22 h-52 z" fill="#4A463C"/>
+              <path d="M350 168 a26 26 0 0 1 52 0" stroke="#5C594E" stroke-width="4" fill="none"/>
+              <g transform="translate(322,248) rotate(-14)">
+                <rect x="0" y="8" width="46" height="15" rx="7" fill="#2F5D43"/>
+                <path d="M7 8 L12 -2 L34 -2 L39 8 Z" fill="#2F5D43"/>
+                <rect x="14" y="1" width="17" height="7" rx="3" fill="#DCE4D9"/>
+                <circle cx="11" cy="24" r="5.5" fill="#1C1B17"/>
+                <circle cx="36" cy="24" r="5.5" fill="#1C1B17"/>
+              </g>
+              <path d="M100 96 q10 -12 24 -6 q8 -10 22 -4 q12 -4 14 6 h-60 z" fill="#EFEAE0"/>
+              <path d="M420 120 q8 -10 20 -5 q6 -8 18 -3 q10 -3 12 5 h-50 z" fill="#EFEAE0"/>
+              <path d="M210 130 q6 -6 12 0 M226 124 q6 -6 12 0" stroke="#5C594E" stroke-width="2" fill="none" opacity=".5"/>
+            </svg>
+            <figcaption>进山 · 砂石线盘山路与隧道(示意)</figcaption>
+          </figure>
+        </div>
+        <div class="note-row"><span class="ic">🧭</span><div><b>今日速览:</b>08:15 出发 → 09:00 清西陵(约 2.5h)→ 回水镇午餐 → 12:45 出发 → 17:00 前后到五台山南线换乘进镇 → 晚餐素斋 → 广化寺夜灯(或 10/5 补)。</div></div>
+        <div class="note-row"><span class="ic">🎯</span><div><b>今日必玩:</b>顺利进山(门票+车辆预约提前办好,17:00 前后到台怀镇);广化寺夜灯(唯一夜间开放寺庙,约 21:00 前——10/4 没赶上 10/5 补)。</div></div>
+        <div class="note-row"><span class="ic">✂️</span><div><b>可舍(砍它换什么):</b>清西陵(通票 216 是加分项不是命根子 → 10:30 直进山版,走 225km 那条线,15:30 到镇,下午还能慢逛);陵区中巴(自驾短驳即可,省 50)。</div></div>
+        <div class="slot"><div class="slot-time">08:15</div><div class="slot-body"><b>出发去清西陵</b>:水镇 → 龙西公路 → 京环线,20km / 46min(国庆预留 1h)。</div></div>
+        <div class="slot"><div class="slot-time">09:00-11:30</div><div class="slot-body"><b>清西陵(约 2.5h)</b>:重点泰陵(雍正,神道+大红门+古松林)+ 崇陵(光绪,唯一开放地宫);旺季<b>通票 108/人</b>,单点票 14:00 后才售——上午去只能买通票,两人 216,不想花就直接跳过。开放 8:00-17:30。</div></div>
+        <div class="slot"><div class="slot-time">11:45-12:40</div><div class="slot-body"><b>回水镇午餐</b>:安格庄农家或水镇内,炖大鱼、摊鸡蛋;顺便把行李装车、退房。更多选择在美食清单。</div></div>
+        <div class="slot"><div class="slot-time">12:45</div><div class="slot-body"><b>出发去五台山</b>:G9511 涞涞 → G5 京昆 → G1812 沧榆 → 太行一号公路 → 砂石线(南线),267km / 3h20m,国庆预留 4h。</div></div>
+        <div class="slot"><div class="slot-time">17:00 前后</div><div class="slot-body"><b>到南线,进镇</b>:走车辆预约通道或停南线停车场换公交;上山前<b>把油加满</b>(五台县城/石咀)。</div></div>
+        <div class="slot"><div class="slot-time">18:30</div><div class="slot-body"><b>晚餐 · 素斋</b>:「一盏明灯全素斋」(般若泉旁,9:00-22:30),文殊大饼、莜面、台蘑菜,人均约 50-80。</div></div>
+        <div class="slot"><div class="slot-time">20:30</div><div class="slot-body"><b>广化寺夜灯(弹性)</b>:唯一夜间开放寺庙约 21:00 前——10/4 累了就 10/5 晚补。</div></div>
+        <div class="note-row"><span class="ic">🚇</span><div><b>今日交通:</b>自驾 287km(20+267);龙西公路和砂石线都是山区路,限速 40-60 路段多,雨天路滑。</div></div>
+        <div class="note-row photo"><span class="ic">📷</span><div><b>今日拍:</b>清西陵红墙古松人像;傍晚进山沿途山谷光线。</div></div>
+        <div class="note-row"><span class="ic">🛏</span><div><b>住:</b>五台山台怀镇或石咀(两档方案+预订链接在住宿区);住景区内民宿需持当日有效门票。</div></div>
+        <div class="note-row"><span class="ic">🅿️</span><div><b>停车:</b>清西陵各陵区停车场;五台山南线停车场约 20 元/天;进镇后车停民宿/镇外围,镇内步行。</div></div>
+        <div class="warn-line">⚠️ <b>10/4 的关键是进山流程</b>:门票+车辆预约必须在出发前办好;没约到车 → 停南线停车场,换景区公交上镇。</div>
+        <div class="warn-line"><b>🛟 Plan B:</b>清西陵不想去/排队久 → 直接走,零损失;门票若没约上 → 联系民宿老板帮补约,或 10/5 在公众号捡漏放票。</div>
+      </div>
+    </section>
+
+    <section id="day3">
+      <div class="day">
+        <div class="day-head">
+          <span class="day-idx">DAY 3 · 10/5(周一)</span>
+          <h3>五台山全天 · 台怀镇深度</h3>
+          <span class="today-badge">● 今天</span>
+        </div>
+        <div class="photos">
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="大白塔寺庙群示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F7F0E1">
+              <circle cx="110" cy="72" r="36" fill="#E7C878" opacity=".16"/>
+              <circle cx="110" cy="72" r="22" fill="#E7C878"/>
+              <path d="M0 240 L140 176 L300 232 L460 180 L600 228 L600 300 L0 300 Z" fill="#DCE4D9"/>
+              <path d="M0 286 L170 234 L340 288 L520 240 L600 272 L600 330 L0 330 Z" fill="#C9D6C6"/>
+              <rect x="0" y="330" width="600" height="70" fill="#E8E1D0"/>
+              <rect x="86" y="286" width="130" height="52" fill="#A2604E"/>
+              <path d="M70 288 L151 244 L232 288 Z" fill="#2E4A3C"/>
+              <path d="M70 288 L151 244 L232 288" fill="none" stroke="#C8A45C" stroke-width="2.5" opacity=".75"/>
+              <rect x="128" y="306" width="28" height="32" rx="3" fill="#4A3A34"/>
+              <rect x="384" y="286" width="130" height="52" fill="#A2604E"/>
+              <path d="M368 288 L449 244 L530 288 Z" fill="#2E4A3C"/>
+              <path d="M368 288 L449 244 L530 288" fill="none" stroke="#C8A45C" stroke-width="2.5" opacity=".75"/>
+              <rect x="444" y="306" width="28" height="32" rx="3" fill="#4A3A34"/>
+              <rect x="244" y="300" width="112" height="30" fill="#EFEAE0"/>
+              <rect x="254" y="282" width="92" height="18" fill="#F5F1E8"/>
+              <path d="M262 286 a38 44 0 0 1 76 0 z" fill="#FCFBF7" stroke="#E7E3D8" stroke-width="2"/>
+              <rect x="296" y="192" width="8" height="52" fill="#C8A45C"/>
+              <path d="M288 192 h24 M288 204 h24 M288 216 h24 M288 228 h24 M288 240 h24" stroke="#B8933F" stroke-width="2" opacity=".7"/>
+              <path d="M280 192 L300 172 L320 192 Z" fill="#C8A45C"/>
+              <circle cx="300" cy="166" r="6" fill="#C8A45C"/>
+              <path d="M300 160 v-10" stroke="#C8A45C" stroke-width="2.5"/>
+              <rect x="286" y="352" width="28" height="16" rx="4" fill="#B7935A"/>
+              <rect x="280" y="364" width="40" height="6" rx="3" fill="#8A8677"/>
+              <path d="M296 348 q-5 -10 2 -16 q7 -6 2 -14 M306 348 q5 -9 -1 -16" stroke="#8A8677" stroke-width="2.5" fill="none" opacity=".6"/>
+              <rect x="276" y="330" width="48" height="10" rx="2" fill="#CFC7B6"/>
+              <rect x="268" y="340" width="64" height="10" rx="2" fill="#C9C1AE"/>
+              <circle cx="240" cy="374" r="6" fill="#1C1B17"/><rect x="234" y="382" width="12" height="16" rx="5" fill="#1C1B17"/>
+              <circle cx="362" cy="378" r="6" fill="#1C1B17"/><rect x="356" y="386" width="12" height="16" rx="5" fill="#1C1B17"/>
+              <path d="M40 372 l16 -52 l16 52 Z" fill="#2F5D43" opacity=".85"/>
+              <path d="M544 372 l16 -52 l16 52 Z" fill="#2F5D43" opacity=".75"/>
+            </svg>
+            <figcaption>台怀镇 · 塔院寺大白塔与殿堂群(示意)</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="黛螺顶俯瞰台怀镇示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F6E9D4">
+              <circle cx="170" cy="150" r="90" fill="#E8B960" opacity=".18"/>
+              <circle cx="170" cy="150" r="46" fill="#E8B960"/>
+              <path d="M300 240 L430 150 L560 236 L600 210 L600 300 L300 300 Z" fill="#DCE4D9"/>
+              <path d="M0 260 L90 190 L200 258 L260 230 L330 286 L0 286 Z" fill="#C9D6C6"/>
+              <rect x="0" y="286" width="600" height="54" fill="#E8E1D0"/>
+              <g fill="#A2604E">
+                <rect x="80" y="296" width="26" height="16"/><rect x="120" y="300" width="22" height="14"/>
+                <rect x="160" y="294" width="30" height="18"/><rect x="205" y="300" width="20" height="14"/>
+                <rect x="245" y="296" width="26" height="16"/><rect x="60" y="304" width="18" height="12"/>
+              </g>
+              <g fill="#2E4A3C">
+                <path d="M74 296 h38 l-19 -10 Z"/><path d="M154 294 h42 l-21 -12 Z"/><path d="M239 296 h38 l-19 -10 Z"/>
+              </g>
+              <path d="M300 302 a8 8 0 0 1 16 0 z" fill="#FCFBF7" stroke="#C7C2B4"/>
+              <rect x="303" y="292" width="3" height="6" fill="#C8A45C"/>
+              <path d="M301 292 h7 l-3.5 -5 Z" fill="#C8A45C"/>
+              <path d="M420 292 C430 320 436 340 432 400" stroke="#CFE0E8" stroke-width="14" fill="none" opacity=".9"/>
+              <path d="M600 250 C520 268 470 300 430 348 C410 372 400 386 396 400 L600 400 Z" fill="#3E4A40"/>
+              <path d="M420 356 L470 340 L432 322 L482 306 L448 288 L492 274" stroke="#CFC7B6" stroke-width="7" fill="none" stroke-linecap="round"/>
+              <g transform="translate(492,232)">
+                <rect x="0" y="18" width="56" height="24" fill="#A2604E"/>
+                <path d="M-8 20 L28 -6 L64 20 Z" fill="#2E4A3C"/>
+                <path d="M-8 20 L28 -6 L64 20" stroke="#C8A45C" stroke-width="2" fill="none" opacity=".75"/>
+                <rect x="20" y="28" width="16" height="14" rx="2" fill="#4A3A34"/>
+              </g>
+              <circle cx="446" cy="324" r="5" fill="#1C1B17"/>
+              <circle cx="462" cy="316" r="5" fill="#1C1B17"/>
+              <path d="M480 120 q6 -6 12 0 M500 112 q6 -6 12 0" stroke="#5C594E" stroke-width="2" fill="none" opacity=".5"/>
+            </svg>
+            <figcaption>黛螺顶 · 俯瞰台怀镇与金黄时刻(示意)</figcaption>
+          </figure>
+        </div>
+        <div class="note-row"><span class="ic">🧭</span><div><b>今日速览:</b>06:30-07:30 五爷庙(自愿早起包)→ 09:00 主线:五爷庙 → 塔院寺 → 显通寺 → 菩萨顶 → 罗睺寺 → 殊像寺 → 午餐 → 黛螺顶(1080 级)→ 傍晚俯瞰金光 → 晚餐 · 台蘑宴 → 广化寺夜灯(10/4 没看的话)。</div></div>
+        <div class="note-row"><span class="ic">🎯</span><div><b>今日必玩:</b>核心三寺连走(塔院寺大白塔 → 显通寺 → 菩萨顶,一条线顺下来);黛螺顶俯瞰台怀镇(傍晚金光,全天高光);五爷庙(早场清净,不想早起就并入主线)。</div></div>
+        <div class="note-row"><span class="ic">✂️</span><div><b>可舍(砍它换什么):</b>黛螺顶缆车(往返 85/人 → 走 1080 级台阶,省 170);罗睺寺/殊像寺(免费小寺,赶时间跳过);德克士全素(→ 随便吃碗台蘑面)。</div></div>
+        <div class="slot"><div class="slot-time">06:30-07:30</div><div class="slot-body"><b>早起包(自愿)</b>:五爷庙(免费),凌晨四点就有人排队,越早越清净;<b>空腹别硬冲,提前备干粮+热水</b>(镇上早点铺 7 点前后才开)。不想早起就并入上午主线。</div></div>
+        <div class="slot"><div class="slot-time">09:00</div><div class="slot-body"><b>主线开走</b>:五爷庙 → 塔院寺(大白塔,10 元)→ 显通寺(10 元)→ 菩萨顶(10 元,爬 108 级台阶)→ 罗睺寺(免费)→ 殊像寺(免费);全在步行圈,镇内不用开车。</div></div>
+        <div class="slot"><div class="slot-time">12:00</div><div class="slot-body"><b>午餐</b>:德克士全素店(台怀街 35 号,植物肉汉堡)或一品香素斋,人均 30-60。更多选择在美食清单。</div></div>
+        <div class="slot"><div class="slot-time">14:00</div><div class="slot-body"><b>黛螺顶</b>:缆车单程 50/往返 85,或走 <b>1080 级台阶</b>(约 40-60 分钟,量力);山顶小门票 8 元。</div></div>
+        <div class="slot"><div class="slot-time">17:00-18:30</div><div class="slot-body"><b>俯瞰金光(全天高光)</b>:傍晚侧光打台怀镇全景最出片,白塔、红墙、山谷一眼收。</div></div>
+        <div class="slot"><div class="slot-time">19:00</div><div class="slot-body"><b>晚餐 · 台蘑宴</b>:云山大酒店、五台山宾馆等均有素斋;认「台蘑+金莲花」点不会错。人均 50-100。</div></div>
+        <div class="slot"><div class="slot-time">21:00 前</div><div class="slot-body"><b>广化寺夜灯(补位)</b>:10/4 晚没看的话 10/5 晚补,唯一夜间开放寺庙。</div></div>
+        <div class="note-row"><span class="ic">🚇</span><div><b>今日交通:</b>车停民宿或镇外围停车场,核心寺庙群<b>步行 + 景区公交</b>;过清水河桥去黛螺顶步行 20-30 分钟。带上厚外套,山上风大。</div></div>
+        <div class="note-row photo"><span class="ic">📷</span><div><b>今日拍:</b>大白塔红墙(经典机位)、菩萨顶 108 阶、黛螺顶俯瞰全景、广化寺夜灯。</div></div>
+        <div class="note-row"><span class="ic">🙏</span><div><b>今日礼仪:</b>顺时针参观、殿内禁闪光灯与喧哗、门槛不踩;香火随喜自愿,别理搭讪卖高价香的。</div></div>
+        <div class="note-row"><span class="ic">🅿️</span><div><b>停车:</b>镇内核心区节假日可能交通管制,车停酒店或镇外围停车场,步行解决。</div></div>
+        <div class="warn-line"><b>🛟 Plan B:</b>黛螺顶缆车停运 → 走缓坡/台阶上,或放弃(俯瞰景改用菩萨顶替代);寺庙人流管控 → 顺序倒过来先上黛螺顶。</div>
+      </div>
+    </section>
+
+    <section id="day4">
+      <div class="day">
+        <div class="day-head">
+          <span class="day-idx">DAY 4 · 10/6(周二)</span>
+          <h3>返程 · 五台山 → 塘沽(402km)</h3>
+          <span class="today-badge">● 今天</span>
+        </div>
+        <div class="photos">
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="返程高速示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F4EFE2">
+              <circle cx="500" cy="84" r="40" fill="#E7C878" opacity=".16"/>
+              <circle cx="500" cy="84" r="24" fill="#E7C878"/>
+              <path d="M0 230 L120 180 L230 226 L360 172 L480 224 L560 196 L600 218 L600 300 L0 300 Z" fill="#DCE4D9"/>
+              <path d="M0 258 L150 224 L300 262 L450 220 L600 254 L600 320 L0 320 Z" fill="#C9D6C6"/>
+              <path d="M0 268 C140 264 300 292 420 330 C490 352 550 364 600 368 L600 398 C540 394 480 382 405 356 C290 318 150 294 0 298 Z" fill="#E2DCCE"/>
+              <path d="M10 282 C150 278 300 304 420 342 C500 366 550 376 592 380" stroke="#C8A45C" stroke-width="3" stroke-dasharray="14 12" fill="none" opacity=".8"/>
+              <g transform="translate(300,300)">
+                <rect x="0" y="8" width="54" height="17" rx="8" fill="#2F5D43"/>
+                <path d="M8 8 L14 -3 L38 -3 L44 8 Z" fill="#2F5D43"/>
+                <rect x="15" y="0" width="20" height="8" rx="3" fill="#DCE4D9"/>
+                <circle cx="12" cy="27" r="6" fill="#1C1B17"/>
+                <circle cx="42" cy="27" r="6" fill="#1C1B17"/>
+                <path d="M-8 16 h-16 M-8 22 h-24" stroke="#2F5D43" stroke-width="2.5" opacity=".45"/>
+              </g>
+              <g transform="translate(60,236)">
+                <rect x="0" y="0" width="44" height="26" rx="3" fill="#2F5D43" opacity=".9"/>
+                <path d="M0 0 L22 -12 L44 0 Z" fill="#2F5D43"/>
+                <rect x="8" y="8" width="10" height="10" fill="#F4EFE2" opacity=".8"/>
+                <rect x="26" y="8" width="10" height="10" fill="#F4EFE2" opacity=".8"/>
+              </g>
+            </svg>
+            <figcaption>返程 · 402km 一路回津(示意)</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="台怀镇晨雾告别示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F4EFE2">
+              <circle cx="486" cy="104" r="52" fill="#E8B960" opacity=".2"/>
+              <circle cx="486" cy="104" r="30" fill="#E8B960"/>
+              <path d="M0 210 L140 150 L280 208 L420 156 L520 202 L600 176 L600 260 L0 260 Z" fill="#DCE4D9"/>
+              <rect x="0" y="252" width="600" height="26" fill="#F4EFE2" opacity=".65"/>
+              <path d="M0 278 L160 228 L330 280 L480 236 L600 272 L600 340 L0 340 Z" fill="#C9D6C6"/>
+              <g transform="translate(172,252)">
+                <path d="M4 34 a10 10 0 0 1 20 0 z" fill="#EFEAE0"/>
+                <rect x="12" y="16" width="4" height="10" fill="#C8A45C"/>
+                <path d="M9 16 h10 l-5 -7 Z" fill="#C8A45C"/>
+              </g>
+              <path d="M230 262 l14 -18 l14 18 Z M300 258 l14 -18 l14 18 Z M372 264 l14 -18 l14 18 Z" fill="#A2604E" opacity=".7"/>
+              <rect x="0" y="330" width="600" height="22" fill="#F4EFE2" opacity=".55"/>
+              <path d="M0 344 L150 310 L320 350 L470 314 L600 344 L600 400 L0 400 Z" fill="#AFBFA9"/>
+              <path d="M-10 386 C150 376 320 380 610 366 L610 400 L-10 400 Z" fill="#E2DCCE"/>
+              <path d="M0 392 C170 384 340 388 600 376" stroke="#C8A45C" stroke-width="3" stroke-dasharray="14 12" fill="none" opacity=".75"/>
+              <path d="M196 128 q7 -7 14 0 M220 118 q7 -7 14 0" stroke="#5C594E" stroke-width="2" fill="none" opacity=".5"/>
+            </svg>
+            <figcaption>台怀镇 · 晨雾告别(示意)</figcaption>
+          </figure>
+        </div>
+        <div class="note-row"><span class="ic">🧭</span><div><b>今日速览:</b>睡饱、早餐 → 满油 → <b>09:30-10:00 出发</b> → 服务区午餐 → 16:00-17:30 到家。</div></div>
+        <div class="note-row"><span class="ic">🎯</span><div><b>今日必做:</b>出发前满油(台怀镇/石咀/五台县城);09:30-10:00 出发,402km 直达。</div></div>
+        <div class="note-row"><span class="ic">✂️</span><div><b>可舍(砍它换什么):</b>所有晨间加戏(想再逛就台怀街走一圈,10:00 是出发死线);「再吃一顿」的绕路(服务区简餐即可)。</div></div>
+        <div class="slot"><div class="slot-time">08:00-09:30</div><div class="slot-body"><b>早餐 + 满油 + 装车</b>:酒店含早就吃完再走,没有就石咀/镇上解决;油箱在台怀镇/石咀/五台县城任一处加满。</div></div>
+        <div class="slot"><div class="slot-time">09:30-10:00</div><div class="slot-body"><b>出发</b>:G1812 沧榆 → G0211 津石,402km,正常 4h45m,国庆预留 5.5-6h。</div></div>
+        <div class="slot"><div class="slot-time">12:30 前后</div><div class="slot-body"><b>服务区午餐</b>:简餐即可(或阜平驴肉);每 2h 进一次服务区强制休息。</div></div>
+        <div class="slot"><div class="slot-time">16:00-17:30</div><div class="slot-body"><b>到家</b>:402km 收官;全程过路费 ¥0(免费到 10/7 24:00)。</div></div>
+        <div class="note-row"><span class="ic">🚇</span><div><b>今日交通:</b>全程高速 402km;10/6 全天返程高峰,早出发是王道,服务区加油可能排队。</div></div>
+        <div class="note-row"><span class="ic">💡</span><div><b>想轻松点的备选:</b>10/5 傍晚 17:00 下山住阜平县城(尚客优阜平店 ¥251,就在阜平西高速口),10/6 只开 3.5h 到家——代价是损失台怀镇最后一晚。</div></div>
+        <div class="note-row"><span class="ic">🛏</span><div><b>时间充裕的话:</b>推迟到 10/7 返也可行,高速同样免费(到 10/7 24:00),多住一晚台怀镇。</div></div>
+        <div class="warn-line"><b>🛟 Plan B:</b>遇雨雪/山区管制 → 就近入住不赶路;推迟到 10/7 回(仍免费),10/8 再上班也来得及。</div>
+      </div>
+    </section>
+
+    <section id="boost">
+      <div class="eyebrow">弹性 · 必玩 vs 可舍</div>
+      <h2>备选与弹性取舍</h2>
+      <div class="card">
+        <h3 style="font-size:1.05rem">🎯 这趟的锚点(保住就不白来)</h3>
+        <p style="font-size:.9rem;color:var(--ink2);margin-top:8px">只有 4 件——<b>易水湖游船</b>(15:30 死线)、<b>进山流程顺利</b>(门票+车辆预约,硬门槛)、<b>台怀镇核心寺庙群连走</b>、<b>黛螺顶俯瞰金光</b>。每天保住 1-2 个锚点就不白来,其余全是加分项、层层可舍。</p>
+        <p style="font-size:.9rem;color:var(--ink2);margin-top:10px"><b>整体落后时的砍序(从上往下砍):</b>① 清西陵(通票 216,砍掉零损失,直接进山)→ ② 黛螺顶缆车(改走 1080 级台阶,省 170)→ ③ 水镇打铁花(改早睡,保进山体力)→ ④ 老子峰栈道(易水湖只保游船)。</p>
+      </div>
+      <h3 style="margin-top:26px">特殊时段玩法(错过就废型)</h3>
+      <table class="tb">
+        <tr><th>项目</th><th>为什么非得那个点</th><th>安排</th></tr>
+        <tr><td><b>打铁花/水镇夜演</b></td><td>夜演只在<b>周末和节假日</b>上演,平时没有</td><td>10/3 晚(周六+假期,大概率有;场次以当日公示为准)</td></tr>
+        <tr><td><b>广化寺夜灯</b></td><td><b>唯一夜间开放</b>的寺庙(约至 21:00)</td><td>10/4 晚,没赶上 10/5 晚补</td></tr>
+        <tr><td><b>五爷庙清晨</b></td><td>越早越清净,9 点后排队明显变长</td><td>10/5 早起包(自愿,06:30-07:30)</td></tr>
+        <tr><td><b>黛螺顶俯瞰金光</b></td><td>傍晚侧光打台怀镇全景最出片</td><td>10/5 傍晚主线(17:00-18:30)</td></tr>
+        <tr><td><b>台顶日出/五个台顶</b>(不排)</td><td>需包车+全天+山顶大风低温,这趟时间不够</td><td>不去,用台怀镇深度逛补</td></tr>
+      </table>
+      <h3 style="margin-top:26px">备选 A:白石山(涞源)——如果想去掉五台山</h3>
+      <table class="tb">
+        <tr><th>对比</th><th>五台山(主案)</th><th>白石山</th></tr>
+        <tr><td>距易水湖</td><td>225-267km</td><td>~90km(1.5h)</td></tr>
+        <tr><td>玩什么</td><td>佛教古建群 + 台怀镇烟火气</td><td>大理石峰林 + 玻璃栈道 + 云海</td></tr>
+        <tr><td>门票</td><td>135 + 车预约 + 观光车</td><td>旺季 135(线上~125)+ 索道往返 140 + 大巴 30</td></tr>
+        <tr><td>天气</td><td>夜 0℃ 上下,冷</td><td>山顶比山下低 8-10℃</td></tr>
+        <tr><td>适合</td><td>想看古建/祈福/山寺氛围</td><td>想玩纯自然 + 玻璃栈道</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">🔀</span><div>白石山可当天从易水湖往返,或改住涞源县城。<b>走这条线整趟更轻松,但少了「去远方」的感觉——按你们口味二选一。</b></div></div>
+      <h3 style="margin-top:26px">备选 B:五台山住不上核心区</h3>
+      <p style="font-size:.88rem;color:var(--ink2);margin-top:8px">见住宿区 B 档(石咀/南门口,约 ¥200-400):每天开车/公交 15km 山路进出,晚上看不了太晚的镇子夜景,但行程完全成立。</p>
+    </section>
+
+    <section id="ticket">
+      <div class="eyebrow">票 · 预约</div>
+      <h2>门票与预约</h2>
+      <p class="lead">价格均为 2026-10-02 联网实查,来源随文标注。</p>
+      <table class="tb">
+        <tr><th>项目</th><th>价格</th><th>预约/购买</th><th>备注</th></tr>
+        <tr><td><b>易水湖 门船联票</b></td><td>线上约 130-135/人;现场 140/人</td><td>携程/美团/抖音线上买,提前 1 天</td><td><b>必须坐船</b>才能进核心湖区;15:30 停止检票登船</td></tr>
+        <tr><td><b>太行水镇</b></td><td>免费入园</td><td>无需预约</td><td>园内项目单收费;停车约 ¥10/天</td></tr>
+        <tr><td><b>清西陵 通票</b></td><td>108/人(旺季)</td><td>现场或官方平台</td><td>含泰陵/崇陵等;单点票 14:00 后才售;中巴 25/人可选</td></tr>
+        <tr><td><b>五台山 大门票</b></td><td>135/人</td><td><b>仅公众号「五台山游客服务中心」实名预约,现场不售</b></td><td>国庆不执行工作日免票</td></tr>
+        <tr><td><b>五台山 车辆进山</b></td><td>免费但需预约</td><td>同一公众号,先买票再约车</td><td><b>每日限约 2000 台</b>;约不上 → 停南线换公交</td></tr>
+        <tr><td><b>五台山 小门票</b></td><td>塔院寺 10 · 显通寺 10 · 菩萨顶 10 · 黛螺顶 8;五爷庙/殊像寺/罗睺寺免费</td><td>现场</td><td>两人合计约 ¥76</td></tr>
+        <tr><td><b>黛螺顶缆车</b></td><td>单程 50 / 往返 85</td><td>现场</td><td>1080 级台阶,想走可只买单程</td></tr>
+        <tr><td><b>景区观光车/公交</b></td><td>口径冲突:有源称 50 元/人(48h),亦有源称 24h 免费接驳</td><td>现场/公众号确认</td><td>预算先按 100 元(2 人)预留</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">💳</span><div><b>10/2-10/3 就要办的顺序:</b>① 五台山门票(135/人)→ ② 车辆进山预约(先票后车)→ ③ 酒店 → ④ 易水湖线上票。<b>国庆额度紧,约满即止。</b></div></div>
+    </section>
+
+    <section id="tips">
+      <div class="eyebrow">避雷 · 防坑</div>
+      <h2>提示与避雷</h2>
+      <div class="tips">
+        <div class="tip"><p><b>「到了再买票、车随便开进去」→ 五台山现场不售票</b>,全部公众号预约;车辆每日限约 2000 台,没约到就老实南线停车换公交,别硬闯核心区(会被劝离)。</p></div>
+        <div class="tip"><p><b>按白天 20℃ 收拾行李 → 台怀镇早晚接近 0℃</b>,清晨五爷庙排队站 1 小时会冻透;羽绒服+帽子手套,洋葱式穿法。忻州城区报 19/0℃,台怀镇山谷更冷,夜里按 0℃ 以下准备。</p></div>
+        <div class="tip"><p><b>在易水湖岸边跟「私人船」走 → 只在大坝/金坡/金龟官方码头购票乘船</b>;官方提示过这类揽客。</p></div>
+        <div class="tip"><p><b>五爷庙周边有人搭讪卖高价香、「开光」加价 → 直接走开</b>;寺庙内自有请香处,随喜自愿。</p></div>
+        <div class="tip"><p><b>空腹冲五爷庙早场 → 不行</b>;镇上早点铺 7 点前后才陆续开门,前一天备点干粮/热水。</p></div>
+        <div class="tip"><p><b>高速免费当周末开 → 10/3 上午出城、10/6 全天返程都是流量高峰</b>;早出发、多进服务区、每 2h 强制休息。</p></div>
+        <div class="tip"><p><b>龙西公路/砂石线按高速开 → 山区隧道群+连续弯道</b>,限速 40-60 路段多,雨天路滑。</p></div>
+        <div class="tip"><p><b>进山前不加满油 → 五台山最后一段连续爬坡</b>;上南线前在五台县城/石咀加满。</p></div>
+        <div class="tip"><p><b>寺庙里大声喧哗/对着佛像开闪光灯/踩门槛 → 顺时针参观、殿内静音</b>,给彼此留个体面。</p></div>
+      </div>
+      <div class="card" style="margin-top:22px">
+        <h3 style="font-size:1.05rem">📋 出发前再确认这几件(诚实清单)</h3>
+        <ul class="check">
+          <li><input type="checkbox" id="ck18"><span class="ct">五台山门票有效期 2 天/3 天/不限说法不一——本行程连续驻留不涉及二次进山;若中途出山需去「二次进山登记处」登记。</span></li>
+          <li><input type="checkbox" id="ck19"><span class="ct">台怀镇候选民宿(妙隐居/南山里/益香阁等)10/4-6 实时房态与价格,需在携程/美团自查。</span></li>
+          <li><input type="checkbox" id="ck20"><span class="ct">10/6 天气未出预报(10/4 后再看一次)。</span></li>
+          <li><input type="checkbox" id="ck21"><span class="ct">太行水镇 10/3 夜演具体场次与时间,以当日公示为准。</span></li>
+          <li><input type="checkbox" id="ck22"><span class="ct">清西陵陵区之间自驾短驳细则,以现场为准。</span></li>
+          <li><input type="checkbox" id="ck23"><span class="ct">石咀 ↔ 台怀镇夜间公交时刻(若住石咀,向酒店确认末班)。</span></li>
+          <li><input type="checkbox" id="ck24"><span class="ct">易水湖官方票务口径以购票平台当日页为准(价格档位注意对应日期)。</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="stay">
+      <div class="eyebrow">住 · 3 晚</div>
+      <h2>住宿</h2>
+      <h3 style="margin-top:14px">10/3 晚 · 易水湖/太行水镇(湖畔住,不折腾)</h3>
+      <table class="tb">
+        <tr><th>民宿</th><th>参考价</th><th>位置/亮点</th><th>备注</th></tr>
+        <tr><td><b>乡韵民宿</b>(易水湖太行水镇店)</td><td>~¥250</td><td>距水镇 200m;9.7 分/108 评;可接送大坝码头;早餐 ¥10</td><td>口碑稳,首选之一</td></tr>
+        <tr><td><b>雨轩 · 精品民宿</b>(太行水镇店)</td><td>~¥250-350(估算)</td><td>安格庄村 196 号,距水镇西门步行 5 分钟;4.9 分;豪华大床房带阳台;老板娘炖大鱼出名</td><td>适合情侣</td></tr>
+        <tr><td><b>青逸民宿</b>(恋乡太行水镇店)</td><td>~¥250-350(估算)</td><td>安格庄村 222 号;4.9 分;原木奶油风;有接送;早餐自助 ¥10</td><td>出片风格</td></tr>
+        <tr><td><b>风清扬民宿</b>(水镇内)</td><td>询价</td><td>水镇内近东门;<b>星空投影房</b>;庭院茶室</td><td>情侣加分项</td></tr>
+        <tr><td><b>湖边农家院</b>(多家)</td><td>¥100-150(常含早晚两餐)</td><td>湖边村子二层小院</td><td>省钱之选,条件朴素</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">📞</span><div>以上为公开平台参考价(2026-10-02 查),这几家暂无实时报价。<b>国庆房紧,建议 10/2-10/3 内直接在携程/美团下单</b>。订房时问清 4 件事:①有没有大床房 ②热水/暖气 ③停车位 ④离大坝码头多远、能不能送过去。</div></div>
+      <h3 style="margin-top:26px">10/4-10/5 两晚 · 五台山(先说实话)</h3>
+      <p style="font-size:.88rem;color:var(--ink2);margin-top:8px">国庆期间台怀镇核心区的正常民宿普遍 <b>¥500-700/晚</b>,≤400 在核心区基本只能靠简单民宿或捡漏。三条路,按预算取舍:</p>
+      <table class="tb">
+        <tr><th>档</th><th>住宿</th><th>价格</th><th>位置</th><th>预订</th></tr>
+        <tr><td><b>A 核心区</b>(体验最好)</td><td>花築 · 无所住民宿(五台山风景区店)</td><td><b>¥605-679/晚 实时价(不可免费取消)</b></td><td>台怀镇草地村,黛螺顶公交站免费接送;2025 新开</td><td><a href="https://rollinggo.cn/pages/hotel/detail/index?id=2449342&amp;checkInDate=2026-10-04&amp;checkOutDate=2026-10-06&amp;roomCount=1&amp;adultCount=2">打开预订页 →</a></td></tr>
+        <tr><td><b>A 核心区备选</b></td><td>花築 · 如尔所院 / 妙隐居(黛螺顶店) / 南山里 / 益香阁</td><td>¥400-950(实时房态需自查;妙隐居 10/4-6 已无报价)</td><td>均在台怀镇及周边</td><td>携程/美团自查,越早越好</td></tr>
+        <tr><td><b>B 南门外</b>(省钱)</td><td>尚客优酒店(五台山风景区石咀店)</td><td><b>¥291/晚 × 2 晚 = ¥582 实时价</b></td><td>石咀镇,南线入口外;每天开车/公交进出</td><td><a href="https://rollinggo.cn/pages/hotel/detail/index?id=2389462&amp;checkInDate=2026-10-04&amp;checkOutDate=2026-10-06&amp;roomCount=1&amp;adultCount=2">打开预订页 →</a></td></tr>
+        <tr><td><b>B 游客中心一带</b></td><td>云先森/永立/小雨点/嘉瑞客栈等</td><td>约 ¥200-400</td><td>大甘河村、金岗库乡</td><td>携程/美团</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">🧭</span><div><b>建议:</b>①优先抢 A 档台怀镇内(晚上逛镇子、广化寺夜游、清晨五爷庙都方便,值这多出的钱);②预算咬死 400 → 选 <b>石咀尚客优</b>(¥291,实时可订),代价是每天 15km 山路进出、晚上看不了镇上夜景;③下单前和携程/美团比个价。</div></div>
+      <div class="warn-line">⚠️ 花築那档<b>不可免费取消</b>,下单前想清楚;两个预订链接是 2026-10-02 查询的实时口径,<b>打开时以页面当时价格为准</b>(需联网打开)。所有预订与支付请你们本人在官方渠道完成。</div>
+      <div class="note-row"><span class="ic">🛏</span><div>住景区内民宿需持<b>当日有效门票</b>(你们本来就要买);返程中转备选——尚客优阜平店 ¥251(高速口,10/5 晚下撤时用)。</div></div>
+    </section>
+
+    <section id="cost">
+      <div class="eyebrow">钱 · 2 人合计</div>
+      <h2>预算</h2>
+      <div class="stats">
+        <div class="stat"><div class="n">¥3,700-5,400</div><div class="l">2 人合计(估算)</div></div>
+        <div class="stat"><div class="n">¥1,850-2,700</div><div class="l">人均(估算)</div></div>
+        <div class="stat"><div class="n">¥0</div><div class="l">过路费(国庆免费)</div></div>
+      </div>
+      <table class="tb" style="margin-top:20px">
+        <tr><th>项目</th><th>估算</th><th>说明</th></tr>
+        <tr><td>门票/体验</td><td>¥990-1,140</td><td>易水湖 260 + 清西陵 216(+中巴 50 可选)+ 五台山大门票 270 + 小门票 ~76 + 黛螺顶缆车 170(往返)+ 观光车 0-100 预留</td></tr>
+        <tr><td>住宿 ×3 晚</td><td>¥830-1,750</td><td>易水湖 ~250-350 + 五台山 582(石咀)~1,400(花築 ×2)</td></tr>
+        <tr><td>餐饮 ×4 天</td><td>¥1,000-1,400</td><td>2 人深度体验档</td></tr>
+        <tr><td>油费</td><td>~¥600(估算)</td><td>~1000km × 8L/100km × 7.5 元/L</td></tr>
+        <tr><td><b>过路费</b></td><td><b>¥0</b></td><td>🎉 国庆免费 10/1-10/7</td></tr>
+        <tr><td>停车</td><td>¥60-90</td><td>各景区 10-20/天</td></tr>
+        <tr><td>机动(香火随喜/特产/零食)</td><td>¥200-400</td><td>弹性最大</td></tr>
+        <tr><td><b>合计</b></td><td><b>约 ¥3,700-5,400</b></td><td>人均约 ¥1,850-2,700</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">💰</span><div><b>省钱杠杆:</b>住石咀(省 ~800)+ 黛螺顶不坐缆车走台阶(省 170)+ 跳过清西陵(省 266)→ 最低可压到 <b>¥2,800 内</b>。</div></div>
+    </section>
+
+    <section id="sos">
+      <div class="eyebrow">应急 · 兜底</div>
+      <h2>应急</h2>
+      <div class="sos-grid">
+        <div class="sos"><h4>🚗 车祸/故障</h4><p>车靠边 → 双闪 → 三角牌 → 人撤离 → <b>122</b>;高速救援 <b>12122</b>;报保险留现场照片。</p></div>
+        <div class="sos"><h4>🏥 身体不适/着凉</h4><p>打 <b>120</b>;高海拔着凉先保暖+热水,不缓解立即下撤到台怀镇(镇上有卫生院)。</p></div>
+        <div class="sos"><h4>🌨 封路/大雪</h4><p>五台山 10 月可能初雪,山区管制时<b>就近入住不赶路</b>;免费时段到 10/7 24:00,时间有余量。</p></div>
+        <div class="sos"><h4>🎫 门票/车辆没约上</h4><p>先联系民宿老板帮补约;公众号会放捡漏票(10/5 还有机会);实在不行车停南线换公交,或改走白石山。</p></div>
+        <div class="sos"><h4>📵 山路信号弱/走散</h4><p>提前约定集合点(酒店大堂/某寺门口);山区信号时有时无,<b>备现金</b>以防支付不畅。</p></div>
+        <div class="sos"><h4>📞 关键渠道</h4><p>五台山票务/车辆预约:公众号「五台山游客服务中心」;易水湖票务:购票平台客服;车险:保单救援电话。</p></div>
+      </div>
+      <div class="note-row"><span class="ic">🧯</span><div><b>分天 Plan B(详见各日卡片):</b>D1 没赶上船 → 10/4 早晨补游船;D2 门票没约上 → 民宿老板帮补约/捡漏;D3 缆车停运 → 台阶或放弃;D4 天气差 → 推迟到 10/7 返(仍免费)。</div></div>
+    </section>
+
+    <section id="eat">
+      <div class="eyebrow">吃 · 台蘑与素斋值得单独说</div>
+      <h2>美食清单</h2>
+      <table class="tb">
+        <tr><th>顿</th><th>地界</th><th>店/点位</th><th>吃什么</th><th>人均</th></tr>
+        <tr><td>10/3 早</td><td>塘沽/路上</td><td>出发前塘沽解决(或高速服务区)</td><td>简单垫肚,别吃太饱</td><td>—</td></tr>
+        <tr><td>10/3 午</td><td>易县县城(顺路备选)</td><td>闫家驴肉老店(易县店) · 开元街金街 003 号;或水镇美食街</td><td>驴肉火烧(夹焖子+尖椒)、驴肉杂粥;水镇炖大鱼</td><td>~30 元(人气旺,饭点早去,门口不好停车)</td></tr>
+        <tr><td>10/3 晚</td><td>太行水镇</td><td>水镇小吃街 / 民宿餐厅</td><td>码头炖大鱼、缸炉烧饼、农家菜</td><td>40-60 元</td></tr>
+        <tr><td>10/4 早</td><td>水镇</td><td>民宿早餐(乡韵 ¥10 / 青逸自助 ¥10)</td><td>玉米粥、烧饼</td><td>~10 元</td></tr>
+        <tr><td>10/4 午</td><td>水镇/安格庄</td><td>回水镇吃或安格庄农家</td><td>炖大鱼、摊鸡蛋</td><td>30-50 元</td></tr>
+        <tr><td>10/4 晚</td><td>台怀镇</td><td>一盏明灯全素斋(般若泉旁,9:00-22:30)</td><td>文殊大饼、莜面、台蘑菜</td><td>50-80 元</td></tr>
+        <tr><td>10/5 早</td><td>台怀镇</td><td>镇上早点铺(台怀街,7:00 前后开门)/ 民宿含早</td><td>包子粥面;早起包提前备干粮</td><td>10-20 元</td></tr>
+        <tr><td>10/5 午</td><td>台怀镇</td><td>德克士全素店(台怀街 35 号)或一品香素斋</td><td>植物肉汉堡;康养素套餐</td><td>30-60 元</td></tr>
+        <tr><td>10/5 晚</td><td>台怀镇</td><td>台蘑宴/素斋(云山大酒店、五台山宾馆等均有素斋)</td><td>台蘑、金莲花茶、莜面</td><td>50-100 元</td></tr>
+        <tr><td>10/6 早</td><td>台怀镇/石咀</td><td>酒店含早或镇上早点</td><td>吃完就撤</td><td>10-20 元</td></tr>
+        <tr><td>10/6 午</td><td>高速沿线</td><td>服务区(或阜平驴肉)</td><td>简餐</td><td>30-50 元</td></tr>
+        <tr><td>10/6 晚</td><td>塘沽</td><td>到家吃</td><td>回家吃饭最香</td><td>—</td></tr>
+        <tr><td>宵夜 · 随意</td><td>台怀镇</td><td>台怀街夜市小摊 / 民宿补一口</td><td>烤串、面食;山上选择少、收摊早</td><td>20-40 元</td></tr>
+        <tr><td>下午茶 · 随意</td><td>台怀镇</td><td>德克士全素店 / 镇上茶馆</td><td>植物肉汉堡、金莲花茶</td><td>15-35 元</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">🍜</span><div><b>找店心法(照抄):</b>五台山素斋认「台蘑+金莲花」这两样点不会错;水镇小吃街「看人多的一般没错」;驴肉火烧要「现烤的火烧+温的驴肉」,凉了不好吃。</div></div>
+    </section>
+
+    <section id="gift">
+      <div class="eyebrow">带点什么</div>
+      <h2>特产与送礼</h2>
+      <table class="tb">
+        <tr><th>特产</th><th>在哪买</th><th>好不好带</th></tr>
+        <tr><td>保定驴肉(真空装)</td><td>易县/保定市区老店</td><td>真空小包好带,别买散装</td></tr>
+        <tr><td>易水砚</td><td>易县(中国名砚)</td><td>文创向,包装好带</td></tr>
+        <tr><td>山西老陈醋</td><td>台怀镇超市/忻州</td><td>好带,注意托运重量</td></tr>
+        <tr><td>台蘑(干)+ 台蘑酱</td><td>台怀镇市场/超市</td><td>干菌轻,好带;<b>别在景点门口买</b></td></tr>
+        <tr><td>金莲花茶</td><td>台怀镇</td><td>轻便,送人合适</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">🛍</span><div>景区门口贵三成是常态,时间允许去镇上超市/市场买。</div></div>
+    </section>
+
+    <footer style="padding:64px 0 80px;text-align:center">
+      <h2>易水湖 · 五台山路书 · 国庆 4 天自驾</h2>
+      <p>天津塘沽河南里出发 · 2026-10-03 至 10-06 · 2 人(情侣)自驾<br>本地单文件 · 无外部依赖 · 断网可打开<br>信息 2026-10-02 联网实查 · 未核实项已标注</p>
+      <p>配图:全部为自绘示意插画(非实景照片——离线单文件不引外部图片);图源:AI 自绘<br>路线与方位已对照真实地图,非等比例、仅供参考</p>
+      <p style="margin-top:18px;font-weight:700">方案仅供参考——安全和开心，才是最重要的。🌕</p>
+    </footer>
+  </div>
+</main>
+<button class="backtop" id="backtop" aria-label="回到顶部">↑</button>
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 1. 当日模式：按今天日期高亮对应行程日 ---------- */
+  var TRIP = { "2026-10-03":"day1", "2026-10-04":"day2", "2026-10-05":"day3", "2026-10-06":"day4" };
+  function todayStr(){
+    var d = new Date();
+    var m = ("0"+(d.getMonth()+1)).slice(-2), day = ("0"+d.getDate()).slice(-2);
+    return d.getFullYear()+"-"+m+"-"+day;
+  }
+  var todayId = TRIP[todayStr()];
+  if (todayId){
+    var sec = document.getElementById(todayId);
+    if (sec){
+      var card = sec.querySelector(".day");
+      if (card) card.classList.add("today");
+      var navA = document.querySelector('.side nav a[href="#'+todayId+'"]');
+      if (navA) navA.innerHTML = '<span class="dot"></span>' + navA.textContent + ' · 今天';
+      function jumpToday(){ lockNav(todayId); sec.scrollIntoView({behavior:"instant", block:"start"}); }
+      /* 布局稳定后再跳（固定延时 300ms 实测落点稳） */
+      if (document.readyState === "complete"){ setTimeout(jumpToday, 300); }
+      else { window.addEventListener("load", function(){ setTimeout(jumpToday, 300); }); }
+    }
+  } else {
+    var prep = document.getElementById("prepCard");
+    if (prep && todayStr() < "2026-10-03") prep.style.border = "2px solid var(--accent)";
+  }
+
+  /* ---------- 2. 字号三档（记忆） ---------- */
+  var FONTS = ["17px","19px","21px"];
+  var fi = 1;
+  try { fi = Math.max(0, Math.min(2, parseInt(localStorage.getItem("yshwt_font"||"1"),10)||0)); } catch(e){}
+  function applyFont(){ document.documentElement.style.setProperty("--fs", FONTS[fi]); }
+  applyFont();
+  function saveFont(){ try{ localStorage.setItem("yshwt_font", String(fi)); }catch(e){} }
+  document.getElementById("fontInc").addEventListener("click", function(){ if(fi<2){fi++;applyFont();saveFont();} });
+  document.getElementById("fontDec").addEventListener("click", function(){ if(fi>0){fi--;applyFont();saveFont();} });
+
+  /* ---------- 3. 打印 ---------- */
+  document.getElementById("printBtn").addEventListener("click", function(){ window.print(); });
+
+  /* ---------- 4. 勾选清单（记忆） ---------- */
+  document.querySelectorAll(".check li").forEach(function(li, i){
+    var box = li.querySelector("input");
+    var key = "yshwt_chk_" + box.id;
+    try { box.checked = localStorage.getItem(key) === "1"; } catch(e){}
+    if (box.checked) li.classList.add("done");
+    li.addEventListener("click", function(ev){
+      if (ev.target.tagName !== "INPUT"){ box.checked = !box.checked; }
+      li.classList.toggle("done", box.checked);
+      try{ localStorage.setItem(key, box.checked ? "1" : "0"); }catch(e){}
+    });
+  });
+
+  /* ---------- 5. 滚动监听：侧栏高亮 + 入场动效 ----------
+     高亮双通道：滚动 = 贴顶窄带 observer；点击/当日跳转 = navLock 目标锁。 */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".side nav a"));
+  var secs = Array.prototype.slice.call(document.querySelectorAll("main section"));
+  var navLock = null, lockTimer = null;
+  function setOn(id){
+    navLinks.forEach(function(a){ a.classList.toggle("on", a.getAttribute("href") === "#"+id); });
+  }
+  function lockNav(id){
+    navLock = id; setOn(id);
+    if (lockTimer) clearTimeout(lockTimer);
+    lockTimer = setTimeout(function(){ navLock = null; }, 1200);
+  }
+  navLinks.forEach(function(a){
+    a.addEventListener("click", function(){ lockNav((a.getAttribute("href") || "").slice(1)); });
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting){
+        en.target.classList.add("in");
+        if (!navLock) setOn(en.target.id);
+      }
+    });
+  }, { rootMargin: "-12% 0px -78% 0px" });
+  secs.forEach(function(s){ io.observe(s); });
+
+  /* ---------- 6. 返回顶部 ---------- */
+  var bt = document.getElementById("backtop");
+  window.addEventListener("scroll", function(){
+    bt.classList.toggle("show", window.scrollY > 600);
+  }, { passive:true });
+  bt.addEventListener("click", function(){ window.scrollTo({ top:0, behavior:"smooth" }); });
+})();
+</script>
+<script>
+/* 兜底：若上方脚本报错导致入场动效未初始化，3 秒后强制显示全部内容 */
+setTimeout(function(){
+  if (!document.querySelector('main section.in')){
+    document.querySelectorAll('main section').forEach(function(s){ s.classList.add('in'); });
+  }
+}, 3000);
+</script>
+</body>
+</html>

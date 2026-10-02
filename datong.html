@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="jianhao-travel-planner · 路书 · 自基准骨架 9c3c6249a4 派生 · 2026-10-02">
+<title>易水湖 · 大同 国庆自驾路书(2026-10-03 至 10-06)</title>
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --bg:#F7F5F0; --surface:#FCFBF7; --ink:#1C1B17; --ink2:#5C594E; --ink3:#8A8677;
+  --line:#E3DFD3; --accent:#2F5D43; --accent-soft:#E6EEE8; --on-accent:#F7F5F0;
+  --warn:#8A6D1F; --warn-soft:#F3EEDF;
+  --red:#b5493a; --gold:#c8a45c;
+  --radius:14px; --fs:19px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:var(--fs)}
+body{background:var(--bg);color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:var(--on-accent)}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--on-accent);padding:8px 16px;z-index:99;border-radius:0 0 8px 0;font-size:.8rem}
+.skip:focus{left:0}
+
+/* ---------- 左侧栏 ---------- */
+.side{position:fixed;inset:0 auto 0 0;width:236px;overflow-y:auto;background:#F2EEE3;border-right:1px solid var(--line);display:flex;flex-direction:column;padding:28px 22px;z-index:10}
+.logo{font-size:1.15rem;font-weight:800;letter-spacing:.02em}
+.logo span{color:var(--accent)}
+.logo-sub{font-size:.58rem;letter-spacing:.2em;color:var(--ink3);margin-top:4px;text-transform:uppercase}
+.nav-group{margin-top:26px}
+.nav-label{font-size:.6rem;letter-spacing:.2em;color:var(--ink3);text-transform:uppercase;margin-bottom:8px;padding-left:12px}
+.side nav a{display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:9px;font-size:.82rem;color:#4A473E;transition:background .2s,color .2s;margin-bottom:2px}
+.side nav a:hover{background:#E8E3D4;color:var(--ink)}
+.side nav a.on{background:var(--accent);color:var(--on-accent);font-weight:600;box-shadow:0 3px 10px rgba(47,93,67,.25)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.side-foot{margin-top:auto;font-size:.66rem;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;line-height:2}
+
+/* ---------- 主区 ---------- */
+main{margin-left:236px}
+.wrap{max-width:860px;margin:0 auto;padding:0 44px}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+.eyebrow{font-size:.62rem;letter-spacing:.24em;color:var(--accent);text-transform:uppercase;font-weight:600;margin-bottom:12px}
+h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.35;font-weight:800;max-width:16em}
+h2{font-size:clamp(1.45rem,2.7vw,1.95rem);line-height:1.35;font-weight:800}
+.lead{color:var(--ink2);margin-top:12px;max-width:34em}
+
+/* ---------- 通用卡片/标签/表格 ---------- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:14px}
+.tag{display:inline-block;font-size:.66rem;padding:3px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent);font-weight:600;margin-left:8px;vertical-align:middle}
+.tag.dim{background:transparent;border:1px solid var(--line);color:var(--ink3);font-weight:400}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+strong{color:var(--ink)}
+table.tb{width:100%;border-collapse:collapse;margin-top:14px;font-size:.85rem;background:var(--surface);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.tb th{background:#F2EEE3;text-align:left;padding:10px 12px;font-size:.78rem;color:var(--ink2);border-bottom:1px solid var(--line);white-space:nowrap}
+.tb td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top}
+.tb tr:last-child td{border-bottom:none}
+.tb td b{color:var(--ink)}
+
+/* ---------- 天气 ---------- */
+.weather{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.wday{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 12px;text-align:center}
+.wday .d{font-size:.7rem;color:var(--ink3)}
+.wday .w{font-size:.82rem;font-weight:700;margin-top:4px}
+.wday .t{font-size:.7rem;color:var(--ink2);margin-top:3px}
+
+/* ---------- 清单（可勾选） ---------- */
+.check{list-style:none;margin-top:16px}
+.check li{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;background:var(--surface);cursor:pointer;transition:background .2s}
+.check li:hover{border-color:var(--accent)}
+.check li.done{background:var(--accent-soft)}
+.check li.done .ct{text-decoration:line-through;color:var(--ink3)}
+.check input{width:22px;height:22px;margin-top:2px;accent-color:var(--accent);flex:none;cursor:pointer}
+.check .ct{font-size:.92rem}
+.check li.hot{border:2px solid var(--warn);background:var(--warn-soft)}
+.check li.hot .ct b{color:#6B5A22}
+
+/* ---------- 每日照片 ---------- */
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 16px}
+.photos.single{grid-template-columns:1fr;max-width:340px;margin-left:auto;margin-right:auto}
+@media (max-width:900px){.photos{grid-template-columns:1fr}.photos.single{max-width:100%}}
+.photos figure{margin:0}
+.photos img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:10px;display:block;border:1px solid var(--line)}
+.photos.single img{aspect-ratio:auto;object-fit:contain}
+.photos figcaption{font-size:.68rem;color:var(--ink3);margin-top:5px;line-height:1.5}
+
+/* ---------- 每日 ---------- */
+.day{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;scroll-margin-top:20px}
+.day.today{border:2px solid var(--accent);box-shadow:0 6px 24px rgba(47,93,67,.14)}
+.day-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+.day-idx{font-size:.62rem;letter-spacing:.14em;color:var(--ink3)}
+.day-head h3{font-size:1.15rem;font-weight:800}
+.today-badge{display:none;font-size:.7rem;padding:4px 12px;border-radius:99px;background:var(--accent);color:var(--on-accent);font-weight:700;align-items:center;gap:6px}
+.day.today .today-badge{display:inline-flex}
+.slot{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.slot:last-of-type{border-bottom:none}
+.slot-time{font-size:.78rem;font-weight:700;color:var(--accent);padding-top:2px}
+.slot-body{font-size:.9rem;color:var(--ink2)}
+.slot-body b,.slot-body strong{color:var(--ink);font-weight:700}
+.note-row{display:flex;gap:10px;margin-top:10px;padding:12px 14px;border-radius:10px;background:var(--accent-soft);font-size:.84rem;color:var(--ink2);align-items:flex-start}
+.note-row.photo{background:#EDF0E6}
+.note-row .ic{flex:none}
+.warn-line{margin-top:10px;padding:12px 14px;border-radius:10px;background:var(--warn-soft);font-size:.84rem;color:#6B5A22}
+
+/* ---------- 数据（预算） ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px 14px}
+.stat .n{font-size:1.5rem;font-weight:800;font-variant-numeric:tabular-nums}
+.stat .l{font-size:.72rem;color:var(--ink2);margin-top:3px}
+
+/* ---------- 提示 ---------- */
+.tips{counter-reset:tip;margin-top:16px}
+.tip{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.tip:last-child{border-bottom:none}
+.tip::before{counter-increment:tip;content:counter(tip);width:34px;height:34px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:800;font-size:.85rem;text-align:center;line-height:34px}
+.tip p{font-size:.9rem;color:var(--ink2);padding-top:5px}
+.sos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.sos{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.sos h4{font-size:.95rem;margin-bottom:8px}
+.sos p{font-size:.82rem;color:var(--ink2)}
+
+/* ---------- 工具条/返回顶部 ---------- */
+.toolbar{position:fixed;top:18px;right:20px;z-index:20;display:flex;gap:8px}
+.tbtn{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:.78rem;font-weight:700;color:var(--ink2);cursor:pointer;transition:all .2s}
+.tbtn:hover{border-color:var(--accent);color:var(--accent)}
+.backtop{position:fixed;bottom:24px;right:20px;z-index:20;width:46px;height:46px;border-radius:50%;background:var(--accent);color:var(--on-accent);border:none;font-size:1.1rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;box-shadow:0 4px 14px rgba(47,93,67,.3)}
+.backtop.show{opacity:1;pointer-events:auto}
+
+/* ---------- 入场动效 ---------- */
+html.js section .card,html.js section .day,html.js section .tip,html.js .wday,html.js .sos{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+html.js section.in .card,html.js section.in .day,html.js section.in .tip,html.js section.in .wday,html.js section.in .sos{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html.js section .card,html.js section .day,html.js section .tip,html.js .wday,html.js .sos{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:900px){
+  html{font-size:calc(var(--fs) - 1px)}
+  body{padding-bottom:76px}
+  .side{position:static;width:auto;flex-direction:row;flex-wrap:wrap;align-items:center;gap:6px;padding:12px 14px;border-right:none;border-bottom:1px solid var(--line)}
+  .logo-sub,.side-foot{display:none}
+  .nav-group{margin:0;display:flex;gap:4px;flex-wrap:wrap}
+  .nav-label{display:block;flex:1 1 100%;font-size:.58rem;letter-spacing:.16em;color:var(--ink3);margin:2px 0 4px 2px}
+  .side nav a{padding:7px 10px;font-size:.76rem}
+  .nav-group--chips{margin-top:8px;display:grid;align-items:stretch;grid-template-columns:repeat(auto-fit,minmax(78px,1fr));gap:6px}
+  .nav-group--chips>.nav-label{grid-column:1/-1;margin:0 0 1px 2px}
+  .nav-group--chips a{margin:0;padding:8px 6px;font-size:.74rem;line-height:1.3;justify-content:center;text-align:center;border:1px solid var(--line);background:var(--surface);border-radius:8px}
+  .nav-group--chips a:hover{border-color:var(--accent);background:var(--accent-soft)}
+  .nav-group--chips a.on{border-color:transparent}
+  main{margin-left:0}
+  .wrap{padding:0 18px}
+  section{padding:44px 0}
+  .weather{grid-template-columns:repeat(3,1fr)}
+  .stats{grid-template-columns:1fr 1fr}
+  .sos-grid{grid-template-columns:1fr}
+  .slot{grid-template-columns:76px 1fr;gap:10px}
+  .tb{font-size:.78rem}
+  .tb th,.tb td{padding:8px 8px}
+  .toolbar{top:auto;bottom:14px;left:14px;right:auto;flex-direction:row}
+  .tbtn{padding:7px 11px;font-size:.72rem;box-shadow:0 2px 8px rgba(0,0,0,.08);background:rgba(252,251,247,.92)}
+}
+
+/* ---------- 打印 ---------- */
+@media print{
+  .side,.toolbar,.backtop,.skip{display:none}
+  main{margin-left:0}
+  body{background:#fff;font-size:12pt}
+  .wrap{max-width:100%;padding:0}
+  section{padding:20px 0;page-break-inside:avoid}
+  .day{page-break-inside:avoid}
+  .card,.day,.tip,.wday,.sos{opacity:1;transform:none}
+  .check li.done .ct{text-decoration:none;color:var(--ink)}
+}
+
+/* ---------- 兼容层（宁波/丽水 共用，勿删） ---------- */
+b,strong{color:var(--ink)}
+.warn-line b{color:inherit}
+.tb td .intro{display:block;font-size:.78rem;color:var(--ink3);margin-top:3px;line-height:1.5}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<div class="toolbar" role="group" aria-label="阅读工具">
+  <button class="tbtn" id="fontDec" aria-label="字号调小">A−</button>
+  <button class="tbtn" id="fontInc" aria-label="字号调大">A＋</button>
+  <button class="tbtn" id="printBtn" aria-label="打印这份路书">🖨 打印</button>
+</div>
+<aside class="side">
+  <div>
+    <div class="logo">易水湖·大同<span>.</span></div>
+    <div class="logo-sub">4 天 3 晚 · 自驾 · 2 人</div>
+  </div>
+  <nav aria-label="页面导航">
+    <div class="nav-group">
+      <div class="nav-label">行程</div>
+      <a href="#overview">总览</a>
+      <a href="#drive">路程</a>
+      <a href="#day1">第 1 天 · 易水湖</a>
+      <a href="#day2">第 2 天 · 大同</a>
+      <a href="#day3">第 3 天 · 云冈</a>
+      <a href="#day4">第 4 天 · 返程</a>
+      <a href="#boost">备选</a>
+    </div>
+    <div class="nav-group nav-group--chips">
+      <div class="nav-label">备忘</div>
+      <a href="#ticket">门票</a>
+      <a href="#tips">提示</a>
+      <a href="#stay">住宿</a>
+      <a href="#cost">预算</a>
+      <a href="#sos">应急</a>
+      <a href="#eat">美食</a>
+      <a href="#gift">特产</a>
+    </div>
+  </nav>
+  <div class="side-foot">
+    天津塘沽出发 · 10/03-10/06<br>
+    2 人 · 自驾 · 8L/100km<br>
+    信息 2026-10-02 实查
+  </div>
+</aside>
+<main id="main">
+  <div class="wrap">
+    <section id="overview">
+      <div class="eyebrow">总览 · 2026 国庆 · 4 天 3 晚 · 自驾</div>
+      <h1>易水湖 · 大同 国庆自驾路书</h1>
+      <p class="lead">塘沽 →(261km)易水湖·太行水镇(10/3 宿)→(272km 直达)大同古城(10/4-10/5 宿两晚)→(487km)回津(10/6)。全程约 1070km,过路费 ¥0(国庆高速免费 10/1 0:00 至 10/7 24:00,以驶离时间为准)。</p>
+      <p class="lead">易水湖在保定市易县西部山区;大同在山西最北端,游玩核心 = 大同古城(平城区,步行逛吃)+ 云冈石窟(城西 16km)。节奏:睡饱出发、两天大同不挪窝、两个晚上排满古城夜景,城墙日落是全程高光。</p>
+      <figure style="margin:24px 0 0">
+        <svg viewBox="0 0 360 470" role="img" aria-label="行程主线示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F6F3EA">
+          <path d="M52 64 V430" stroke="#2F5D43" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round" opacity=".55"/>
+          <circle cx="52" cy="64" r="16" fill="#2F5D43"/>
+          <text x="52" y="69" text-anchor="middle" font-size="14" font-weight="700" fill="#F7F5F0">起</text>
+          <text x="84" y="60" font-size="16" font-weight="700" fill="#1C1B17">塘沽 · 河南里出发</text>
+          <text x="84" y="80" font-size="12.5" fill="#8A8677">10/3 早上 · 261km → 易水湖</text>
+          <g transform="translate(300,50)" fill="#2F5D43">
+            <rect x="0" y="10" width="34" height="12" rx="5"/>
+            <path d="M7 10 L11 2 L23 2 L27 10 Z"/>
+            <rect x="12" y="4" width="10" height="5" rx="2" fill="#F6F3EA"/>
+            <circle cx="8" cy="24" r="4" fill="#1C1B17"/><circle cx="26" cy="24" r="4" fill="#1C1B17"/>
+          </g>
+          <circle cx="52" cy="186" r="16" fill="#C8A45C"/>
+          <text x="52" y="191" text-anchor="middle" font-size="14" font-weight="700" fill="#F7F5F0">1</text>
+          <text x="84" y="182" font-size="16" font-weight="700" fill="#1C1B17">易水湖 · 太行水镇</text>
+          <text x="84" y="202" font-size="12.5" fill="#8A8677">10/3 宿 · 游船 15:30 停止登船</text>
+          <g transform="translate(298,164)">
+            <path d="M0 14 Q7 6 14 14 T28 14 T42 14" stroke="#2F5D43" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M0 24 Q7 16 14 24 T28 24 T42 24" stroke="#2F5D43" stroke-width="3" fill="none" stroke-linecap="round" opacity=".5"/>
+            <circle cx="34" cy="4" r="6" fill="#C8A45C"/>
+          </g>
+          <circle cx="52" cy="308" r="16" fill="#C8A45C"/>
+          <text x="52" y="313" text-anchor="middle" font-size="14" font-weight="700" fill="#F7F5F0">2</text>
+          <text x="84" y="304" font-size="16" font-weight="700" fill="#1C1B17">大同古城(住两晚)</text>
+          <text x="84" y="324" font-size="12.5" fill="#8A8677">10/4-10/5 · 272km 直达 · 云冈+古城</text>
+          <g transform="translate(296,292)" fill="#2F5D43">
+            <path d="M0 26 V12 h4 v-4 h6 v4 h6 v-4 h6 v4 h6 v-4 h6 v4 h4 v14 Z"/>
+            <rect x="14" y="18" width="8" height="8" rx="2" fill="#F6F3EA"/>
+          </g>
+          <circle cx="52" cy="430" r="16" fill="#2F5D43"/>
+          <text x="52" y="435" text-anchor="middle" font-size="14" font-weight="700" fill="#F7F5F0">3</text>
+          <text x="84" y="426" font-size="16" font-weight="700" fill="#1C1B17">回津 · 到家</text>
+          <text x="84" y="446" font-size="12.5" fill="#8A8677">10/6 · 487km · 9 点前上高速</text>
+          <g transform="translate(304,416)" fill="#2F5D43">
+            <path d="M0 14 L14 2 L28 14 V30 H0 Z"/>
+            <rect x="10" y="20" width="8" height="10" rx="2" fill="#F6F3EA"/>
+          </g>
+        </svg>
+        <figcaption style="font-size:.72rem;color:var(--ink3);margin-top:6px;line-height:1.5">行程主线(示意):塘沽 → 易水湖 → 大同 → 回津;车程数字见「路程与停车」总表。</figcaption>
+      </figure>
+      <div class="warn-line">⚠️ 三件硬提醒:大同夜里 <b>-2℃</b>(羽绒服+秋裤,按冬装装箱);<b>云冈石窟不可约当日票</b>(提前 1-15 天,10/2 内就约);10/6 返程高峰日,<b>9 点前上高速</b>。</div>
+      <div class="weather">
+        <div class="wday"><div class="d">10/3 六 · 易水湖</div><div class="w">晴</div><div class="t">26 / 9℃</div></div>
+        <div class="wday"><div class="d">10/4 日 · 大同</div><div class="w">晴</div><div class="t">14 / -2℃</div></div>
+        <div class="wday"><div class="d">10/5 一 · 大同</div><div class="w">晴</div><div class="t">18 / -1℃</div></div>
+      </div>
+      <p style="font-size:.78rem;color:var(--ink3);margin-top:8px">天气来源:高德天气 2026-10-02 实查;10/6 预报未出(10/4 后再查);出发前每晚再核一次。</p>
+      <div class="card" id="prepCard" style="margin-top:22px">
+        <h3 style="font-size:1.05rem">🚨 出发前必办(10/2-10/3,按顺序办)</h3>
+        <ul class="check">
+          <li class="hot"><input type="checkbox" id="ck1"><span class="ct"><b>云冈石窟预约</b>(10/5 进景区):小程序「云冈石窟文旅」或公众号「云冈石窟官微」实名预约,120 元/人;<b>不可约当日票</b>,提前 1-15 天;携程/美团/抖音为授权平台。</span></li>
+          <li class="hot"><input type="checkbox" id="ck2"><span class="ct"><b>订大同酒店</b>(10/4-10/5 两晚):福仁居双床 ¥391 起、尚客优大床 ¥437-445、汉庭含双早 ¥564、如家含双早 ¥599——<b>汉庭免费取消 10/2 23:00 截止</b>,其余多截止 10/3;先占位,免费取消期内随便改(详见住宿区)。</span></li>
+          <li><input type="checkbox" id="ck3"><span class="ct"><b>易水湖门票</b>:携程/美团/抖音线上买(约 130-135 元/人),提前 1 天,免排队还略便宜。</span></li>
+          <li><input type="checkbox" id="ck4"><span class="ct"><b>车辆</b>:出发前加满油、检查胎压玻璃水;大同返程前再补满一次(全程约 1070km)。</span></li>
+          <li><input type="checkbox" id="ck5"><span class="ct"><b>按冬装装箱</b>:大同夜里 -2℃——羽绒服/抓绒/秋裤、帽子手套围巾(清单见下)。</span></li>
+          <li><input type="checkbox" id="ck6"><span class="ct"><b>天气终判</b>:10/2 晚再核一次沿途天气与路况(10/6 预报可能还没出,10/4 后再看)。</span></li>
+        </ul>
+      </div>
+      <div class="card" id="gear">
+        <h3 style="font-size:1.05rem">🎒 装备清单(本趟特有优先)</h3>
+        <p style="font-size:.8rem;color:var(--ink3);margin-top:6px">本趟特有(先装这些)</p>
+        <ul class="check">
+          <li><input type="checkbox" id="ck7"><span class="ct">🧥 羽绒服/厚冲锋衣 + 抓绒 + 秋裤(大同夜间 -2℃,硬指标)</span></li>
+          <li><input type="checkbox" id="ck8"><span class="ct">🧣 帽子、手套、围巾(城墙看日落,站着不动更冷)</span></li>
+          <li><input type="checkbox" id="ck9"><span class="ct">👟 防滑好走的鞋(城墙台阶、云冈步行)</span></li>
+          <li><input type="checkbox" id="ck10"><span class="ct">🧴 防晒霜 + 润唇膏 + 面霜(晋北干冷+紫外线)</span></li>
+          <li><input type="checkbox" id="ck11"><span class="ct">🥤 保温杯(随时热水)</span></li>
+          <li><input type="checkbox" id="ck12"><span class="ct">💵 少量现金 + 身份证(所有门票实名)</span></li>
+          <li><input type="checkbox" id="ck13"><span class="ct">☂️ 折叠伞(10/3 天津段小雨)</span></li>
+          <li><input type="checkbox" id="ck14"><span class="ct">🔌 充电宝 + 车充</span></li>
+        </ul>
+        <p style="font-size:.8rem;color:var(--ink3);margin-top:10px">通用项</p>
+        <ul class="check">
+          <li><input type="checkbox" id="ck15"><span class="ct">驾驶证、行驶证、ETC</span></li>
+          <li><input type="checkbox" id="ck16"><span class="ct">常用药(感冒/肠胃/晕车)</span></li>
+          <li><input type="checkbox" id="ck17"><span class="ct">车:胎压、玻璃水、加满油</span></li>
+        </ul>
+      </div>
+    </section>
+    <section id="drive">
+      <div class="eyebrow">行 · 自驾</div>
+      <h2>路程与停车</h2>
+      <p class="lead">全程约 1060-1080km(含云冈往返与市内),按 8L/100km 估油费。</p>
+      <table class="tb">
+        <tr><th>段</th><th>路线要点</th><th>里程</th><th>正常耗时</th><th>国庆预留</th></tr>
+        <tr><td><b>塘沽 → 易水湖</b></td><td>S50 津晋 → G18 荣乌 → 龙西公路(山区隧道群)</td><td>261 km</td><td>3h45m</td><td>4.5-5h</td></tr>
+        <tr><td><b>水镇 → 大同古城</b>(直达)</td><td>G9511 涞涞 → G18 荣乌 → 浑源枢纽 → S45 天黎 → S30 孙右</td><td>272 km</td><td>4h02m</td><td>5h</td></tr>
+        <tr><td><b>古城 → 云冈石窟</b>(单程)</td><td>云冈路</td><td>19 km</td><td>35-55min</td><td>1h</td></tr>
+        <tr><td><b>大同 → 塘沽</b></td><td>S45 天黎 → G18 荣乌 → 津雄 → 津晋</td><td>487 km</td><td>5h56m</td><td>7h</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">⛽</span><div>油费:按 8L/100km、92# 约 7.5 元/L 估 ≈ <b>¥650</b>(估算)。<b>过路费 ¥0</b>——国庆免费 10/1 0:00 至 10/7 24:00(7 座以下,以驶离时间为准)。</div></div>
+      <h3 style="margin-top:26px">市内交通与打车(大同)</h3>
+      <p style="font-size:.88rem;color:var(--ink2);margin-top:8px">古城内:景点全扎堆(鼓楼—华严寺—善化寺—九龙壁—城墙都在步行 3-10 分钟圈),<b>完全不用车</b>;车停酒店(或华严寺地下停车场,约 20 元/天封顶),逛街靠腿。</p>
+      <table class="tb">
+        <tr><th>去云冈石窟(18.8km)</th><th>花费</th><th>耗时</th><th>说明</th></tr>
+        <tr><td><b>自驾</b></td><td>停车约 10 元</td><td>40-55min</td><td>灵活;国庆车位紧,8:30 前进场最稳</td></tr>
+        <tr><td><b>打车/网约车</b></td><td>单程 35-50 元,往返 80-100 元</td><td>20-25min</td><td>最省心:车留酒店,回程直接送到饭馆</td></tr>
+        <tr><td><b>公交</b></td><td>3 路 1 元 / 快速 603 路 2 元 / 12 路 1 元</td><td>40-70min</td><td>省钱;快速 603 路南站直达景区门口,国庆人多</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">🚕</span><div>市内打车:起步价公开资料两说(<b>6 元或 7 元/3km,打表为准</b>);网约车好叫,酒店→鼓楼约 8-10 元,晚上从帅府街吃完回酒店基本一个起步价。国庆古城周边易堵、可能有临时管制:<b>默认用打车软件叫车;火车站/景区口拉客的黑车别理。</b></div></div>
+      <figure style="margin-top:22px">
+        <svg viewBox="0 0 400 340" role="img" aria-label="大同古城步行路线示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F6F3EA">
+          <rect x="70" y="40" width="260" height="260" fill="none" stroke="#3E4A40" stroke-width="9"/>
+          <rect x="79" y="49" width="242" height="242" fill="none" stroke="#3E4A40" stroke-width="2" opacity=".3"/>
+          <rect x="74" y="166" width="252" height="8" fill="#E7E1D2"/>
+          <rect x="196" y="44" width="8" height="252" fill="#E7E1D2"/>
+          <rect x="188" y="34" width="24" height="14" rx="3" fill="#3E4A40"/>
+          <rect x="188" y="292" width="24" height="14" rx="3" fill="#3E4A40"/>
+          <rect x="64" y="163" width="14" height="24" rx="3" fill="#3E4A40"/>
+          <rect x="322" y="163" width="14" height="24" rx="3" fill="#3E4A40"/>
+          <path d="M128 207 L190 202 L200 192 L248 188 L255 186 M255 186 L200 206 L200 268 L178 272 L200 296 M255 186 L255 154" fill="none" stroke="#2F5D43" stroke-width="3" stroke-dasharray="7 6" opacity=".85" stroke-linecap="round"/>
+          <circle cx="128" cy="207" r="11" fill="#2F5D43"/><text x="128" y="212" font-size="13" font-weight="700" text-anchor="middle" fill="#F7F5F0">1</text>
+          <circle cx="200" cy="192" r="11" fill="#2F5D43"/><text x="200" y="197" font-size="13" font-weight="700" text-anchor="middle" fill="#F7F5F0">2</text>
+          <circle cx="255" cy="186" r="11" fill="#2F5D43"/><text x="255" y="191" font-size="13" font-weight="700" text-anchor="middle" fill="#F7F5F0">3</text>
+          <circle cx="178" cy="272" r="11" fill="#2F5D43"/><text x="178" y="277" font-size="13" font-weight="700" text-anchor="middle" fill="#F7F5F0">4</text>
+          <circle cx="200" cy="296" r="11" fill="#2F5D43"/><text x="200" y="301" font-size="13" font-weight="700" text-anchor="middle" fill="#F7F5F0">5</text>
+          <rect x="92" y="224" width="72" height="24" rx="12" fill="#FCFBF7" stroke="#E3DFD3"/><text x="128" y="240" text-anchor="middle" font-size="12.5" fill="#1C1B17">华严寺</text>
+          <rect x="104" y="166" width="60" height="24" rx="12" fill="#FCFBF7" stroke="#E3DFD3"/><text x="134" y="182" text-anchor="middle" font-size="12.5" fill="#1C1B17">鼓楼</text>
+          <rect x="272" y="176" width="76" height="24" rx="12" fill="#FCFBF7" stroke="#E3DFD3"/><text x="310" y="192" text-anchor="middle" font-size="12.5" fill="#1C1B17">九龙壁</text>
+          <rect x="272" y="128" width="76" height="24" rx="12" fill="#FCFBF7" stroke="#E3DFD3"/><text x="310" y="144" text-anchor="middle" font-size="12.5" fill="#1C1B17">代王府</text>
+          <rect x="96" y="286" width="72" height="24" rx="12" fill="#FCFBF7" stroke="#E3DFD3"/><text x="132" y="302" text-anchor="middle" font-size="12.5" fill="#1C1B17">善化寺</text>
+          <rect x="216" y="306" width="132" height="24" rx="12" fill="#FCFBF7" stroke="#E3DFD3"/><text x="282" y="322" text-anchor="middle" font-size="12.5" fill="#1C1B17">永泰门 · 登城墙</text>
+          <text x="200" y="26" text-anchor="middle" font-size="11.5" fill="#8A8677">武定门</text>
+          <text x="34" y="180" text-anchor="middle" font-size="11.5" fill="#8A8677">清远门</text>
+          <text x="362" y="180" text-anchor="middle" font-size="11.5" fill="#8A8677">和阳门</text>
+          <g transform="translate(372,60)">
+            <circle r="15" fill="#FCFBF7" stroke="#E3DFD3"/>
+            <path d="M0 -9 L5 7 L0 4 L-5 7 Z" fill="#2F5D43"/>
+            <text y="-22" text-anchor="middle" font-size="11.5" fill="#5C594E">北</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:.72rem;color:var(--ink3);margin-top:6px;line-height:1.5">大同古城步行圈(示意·非等比例,方位已对照真实地图):①华严寺 → ②鼓楼 → ③九龙壁/代王府(街对面)→ ④善化寺 → ⑤永泰门登城墙看日落;各段步行 3-10 分钟。</figcaption>
+      </figure>
+    </section>
+    <section id="day1">
+      <div class="day">
+        <div class="day-head">
+          <span class="day-idx">DAY 1 · 10/3(周六)</span>
+          <h3>塘沽 → 易水湖 · 太行水镇</h3>
+          <span class="today-badge">● 今天</span>
+        </div>
+        <div class="photos">
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="易水湖画舫示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F6F3EA">
+              <circle cx="486" cy="86" r="46" fill="#E7C878" opacity=".18"/>
+              <circle cx="486" cy="86" r="30" fill="#E7C878"/>
+              <path d="M0 206 L92 152 L172 198 L262 142 L352 194 L432 158 L522 200 L600 172 L600 268 L0 268 Z" fill="#DCE4D9"/>
+              <path d="M300 222 L382 152 L452 206 L522 168 L600 212 L600 300 L300 300 Z" fill="#C9D6C6"/>
+              <path d="M470 228 L520 150 L562 198 L600 174 L600 272 L470 272 Z" fill="#AFBFA9"/>
+              <path d="M470 228 L520 150 L562 198" fill="none" stroke="#2F5D43" stroke-width="3" opacity=".35"/>
+              <rect x="0" y="258" width="600" height="142" fill="#E3EDE4"/>
+              <path d="M24 300 Q64 292 104 300 T184 300 T264 300 T344 300 T424 300 T504 300 T584 300" fill="none" stroke="#2F5D43" stroke-width="2" opacity=".22"/>
+              <path d="M44 338 Q94 330 144 338 T244 338 T344 338 T444 338 T544 338" fill="none" stroke="#2F5D43" stroke-width="2" opacity=".15"/>
+              <path d="M148 122 q9 -9 18 0 M172 112 q9 -9 18 0 M196 122 q9 -9 18 0" stroke="#5C594E" stroke-width="2.5" fill="none" opacity=".55"/>
+              <path d="M212 296 L388 296 L366 320 L234 320 Z" fill="#4A463C"/>
+              <rect x="254" y="266" width="94" height="30" rx="7" fill="#C8A45C"/>
+              <rect x="254" y="266" width="94" height="9" rx="4" fill="#2F5D43" opacity=".5"/>
+              <rect x="298" y="238" width="6" height="30" fill="#4A463C"/>
+              <path d="M304 240 L332 250 L304 260 Z" fill="#C8A45C" opacity=".85"/>
+              <path d="M228 330 h144" stroke="#2F5D43" stroke-width="3" opacity=".25"/>
+              <path d="M40 400 q6 -42 2 -72 M58 400 q-4 -36 4 -64 M76 400 q8 -32 2 -58" stroke="#2F5D43" stroke-width="3" fill="none" opacity=".45"/>
+            </svg>
+            <figcaption>易水湖 · 湖上画舫与老子峰(示意)</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="太行水镇夜景示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#26332C">
+              <rect width="600" height="400" fill="#26332C"/>
+              <circle cx="498" cy="72" r="40" fill="#E7C878" opacity=".12"/>
+              <circle cx="498" cy="72" r="22" fill="#E7C878" opacity=".9"/>
+              <circle cx="120" cy="60" r="2" fill="#E7C878" opacity=".7"/>
+              <circle cx="200" cy="44" r="2" fill="#E7C878" opacity=".5"/>
+              <circle cx="300" cy="70" r="2" fill="#E7C878" opacity=".6"/>
+              <circle cx="392" cy="48" r="2" fill="#E7C878" opacity=".5"/>
+              <path d="M0 216 L128 192 L128 400 L0 400 Z" fill="#1B2620"/>
+              <path d="M600 216 L472 192 L472 400 L600 400 Z" fill="#1B2620"/>
+              <path d="M128 210 L150 192 L150 216 Z" fill="#141C17"/>
+              <path d="M472 210 L450 192 L450 216 Z" fill="#141C17"/>
+              <path d="M136 252 Q226 276 300 268" stroke="#8A8677" stroke-width="1.5" fill="none" opacity=".5"/>
+              <path d="M464 252 Q374 276 300 268" stroke="#8A8677" stroke-width="1.5" fill="none" opacity=".5"/>
+              <circle cx="160" cy="262" r="12" fill="#E7C878" opacity=".16"/><circle cx="160" cy="262" r="6" fill="#E7C878"/>
+              <circle cx="200" cy="270" r="12" fill="#E7C878" opacity=".16"/><circle cx="200" cy="270" r="6" fill="#E7C878"/>
+              <circle cx="240" cy="273" r="12" fill="#E7C878" opacity=".16"/><circle cx="240" cy="273" r="6" fill="#E7C878"/>
+              <circle cx="280" cy="271" r="12" fill="#E7C878" opacity=".16"/><circle cx="280" cy="271" r="6" fill="#E7C878"/>
+              <circle cx="440" cy="262" r="12" fill="#E7C878" opacity=".16"/><circle cx="440" cy="262" r="6" fill="#E7C878"/>
+              <circle cx="400" cy="270" r="12" fill="#E7C878" opacity=".16"/><circle cx="400" cy="270" r="6" fill="#E7C878"/>
+              <circle cx="360" cy="273" r="12" fill="#E7C878" opacity=".16"/><circle cx="360" cy="273" r="6" fill="#E7C878"/>
+              <circle cx="320" cy="271" r="12" fill="#E7C878" opacity=".16"/><circle cx="320" cy="271" r="6" fill="#E7C878"/>
+              <path d="M272 268 L272 330 L328 330 L328 268 L318 268 L318 252 L282 252 L282 268 Z" fill="#141C17"/>
+              <rect x="292" y="300" width="16" height="30" rx="8" fill="#26332C"/>
+              <g stroke="#E7C878" stroke-linecap="round" opacity=".9" fill="none">
+                <path d="M300 344 L278 252" stroke-width="2" opacity=".8"/>
+                <path d="M300 344 L262 276" stroke-width="2" opacity=".6"/>
+                <path d="M300 344 L255 300" stroke-width="2"/>
+                <path d="M300 344 L270 328" stroke-width="2" opacity=".7"/>
+                <path d="M300 344 L322 258" stroke-width="2" opacity=".75"/>
+                <path d="M300 344 L338 280" stroke-width="2" opacity=".6"/>
+                <path d="M300 344 L345 302" stroke-width="2"/>
+                <path d="M300 344 L330 330" stroke-width="2" opacity=".7"/>
+                <path d="M300 344 L300 242" stroke-width="2" opacity=".85"/>
+              </g>
+              <circle cx="286" cy="270" r="2" fill="#E7C878"/><circle cx="312" cy="264" r="2" fill="#E7C878"/>
+              <circle cx="258" cy="292" r="2" fill="#E7C878"/><circle cx="342" cy="290" r="2" fill="#E7C878"/>
+              <rect x="0" y="356" width="600" height="44" fill="#1F2B24"/>
+              <g fill="#E7C878" opacity=".35">
+                <rect x="150" y="362" width="4" height="18"/><rect x="228" y="360" width="4" height="24"/>
+                <rect x="300" y="362" width="4" height="20"/><rect x="372" y="360" width="4" height="24"/>
+                <rect x="446" y="362" width="4" height="18"/>
+              </g>
+            </svg>
+            <figcaption>太行水镇 · 夜晚灯河与打铁花(示意)</figcaption>
+          </figure>
+        </div>
+        <div class="note-row"><span class="ic">🧭</span><div><b>今日速览:</b>08:00 出发 → 12:15 前后到 → 午餐 → 14:00 上船(15:30 停止登船)→ 16:30 回岸 → 18:30 水镇夜游+晚餐。</div></div>
+        <div class="note-row"><span class="ic">🎯</span><div><b>今日必玩:</b>易水湖画舫游船(15:30 停止登船,本日锚点)+ 老子峰栈道;傍晚太行水镇夜游(亮灯+打铁花,周六+假期大概率有)。</div></div>
+        <div class="note-row"><span class="ic">✂️</span><div><b>可舍(砍它换什么):</b>老子峰栈道(体力一般/时间紧 → 只坐船,省 1h);打铁花夜演(散场晚、站着等累 → 早回民宿,给 10/4 长途留体力);特意绕易县吃驴肉(→ 水镇就地吃)。</div></div>
+        <div class="slot"><div class="slot-time">07:00</div><div class="slot-body"><b>早餐 · 出发前</b>:在塘沽吃好早点(或高速服务区对付一口);行李最后核一遍。天津段预报小雨,伞放顺手处。</div></div>
+        <div class="slot"><div class="slot-time">07:30-08:00</div><div class="slot-body"><b>出发</b>:塘沽河南里 → S50 津晋 → G18 荣乌 → 易县 → 龙西公路;261km,正常 3h45m,国庆预留 4.5-5h。山区隧道群,注意限速、开车灯。</div></div>
+        <div class="slot"><div class="slot-time">12:15 前后</div><div class="slot-body"><b>抵达 + 午餐</b>:太行水镇美食街(炖大鱼、缸炉烧饼);顺路由易县「闫家驴肉老店」驴肉火烧+杂粥,人均约 30。更多选择在美食清单。</div></div>
+        <div class="slot"><div class="slot-time">14:00</div><div class="slot-body"><b>上船(本日锚点)</b>:大坝码头(离水镇最近),门船联票乘画舫入湖 + 老子峰悬空栈道,约 2.5-3h;<b>15:30 停止检票登船,务必那之前上船</b>。</div></div>
+        <div class="slot"><div class="slot-time">16:30</div><div class="slot-body"><b>回岸</b>:湖边歇脚、拍水色;回民宿放东西、加衣服(山区傍晚转凉)。</div></div>
+        <div class="slot"><div class="slot-time">18:30</div><div class="slot-body"><b>夜游 + 晚餐</b>:水镇亮灯、小吃街晚餐;周六+假期大概率有打铁花/夜演。</div></div>
+        <div class="slot"><div class="slot-time">21:00</div><div class="slot-body"><b>回民宿早歇</b>:给 10/4 的 272km 留体力。</div></div>
+        <div class="note-row"><span class="ic">🚇</span><div><b>今日交通:</b>自驾 261km;天津段小雨慢开;易水湖各码头/水镇停车场均约 10 元/天。</div></div>
+        <div class="note-row photo"><span class="ic">📷</span><div><b>今日拍:</b>湖上画舫逆光、老子峰栈道、水镇灯笼街(夜)。</div></div>
+        <div class="note-row"><span class="ic">🛏</span><div><b>住:</b>易水湖畔/太行水镇民宿(5 家参考价在住宿区);订房四问:大床 / 热水暖气 / 停车位 / 离大坝码头多远。</div></div>
+        <div class="note-row"><span class="ic">🅿️</span><div><b>停车:</b>易水湖各码头停车场约 10 元/天;太行水镇停车场约 10 元/天。大坝码头离水镇最近。</div></div>
+        <div class="warn-line"><b>🛟 Plan B:</b>没赶上班船 → 只逛水镇;10/4 早上 08:00 首班船补游湖(出发顺延至 11:30 前后,到大同约 16:30-17:00,华严寺顺延到 10/5 补)。</div>
+      </div>
+    </section>
+    <section id="day2">
+      <div class="day">
+        <div class="day-head">
+          <span class="day-idx">DAY 2 · 10/4(周日)</span>
+          <h3>太行水镇 → 大同古城(272km 直达)</h3>
+          <span class="today-badge">● 今天</span>
+        </div>
+        <div class="photos">
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="涞涞高速转场示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F6F3EA">
+              <circle cx="120" cy="74" r="40" fill="#E7C878" opacity=".15"/>
+              <circle cx="120" cy="74" r="26" fill="#E7C878"/>
+              <path d="M0 226 L110 176 L210 224 L330 168 L450 222 L540 190 L600 214 L600 300 L0 300 Z" fill="#DCE4D9"/>
+              <path d="M0 252 L130 214 L260 254 L400 210 L520 250 L600 232 L600 320 L0 320 Z" fill="#C9D6C6"/>
+              <path d="M40 214 C170 200 240 258 340 306 C440 358 520 372 600 378 L600 400 C500 394 410 378 310 330 C210 282 140 252 40 246 Z" fill="#E2DCCE"/>
+              <path d="M62 232 C176 222 248 270 344 318 C436 366 520 380 594 384" stroke="#C8A45C" stroke-width="3" stroke-dasharray="14 12" fill="none" opacity=".8"/>
+              <rect x="150" y="206" width="96" height="68" rx="34" fill="#4A463C"/>
+              <rect x="168" y="226" width="26" height="48" rx="13" fill="#1B2620"/>
+              <rect x="202" y="226" width="26" height="48" rx="13" fill="#1B2620"/>
+              <g transform="translate(352,300)">
+                <rect x="0" y="8" width="54" height="17" rx="8" fill="#2F5D43"/>
+                <path d="M10 8 L16 -3 L40 -3 L46 8 Z" fill="#2F5D43"/>
+                <rect x="17" y="0" width="20" height="8" rx="3" fill="#DCE4D9"/>
+                <circle cx="12" cy="27" r="6" fill="#1C1B17"/>
+                <circle cx="42" cy="27" r="6" fill="#1C1B17"/>
+              </g>
+              <g opacity=".85">
+                <path d="M46 178 h104 v-12 h-9 v7 h-13 v-7 h-11 v7 h-13 v-7 h-11 v7 h-13 v-7 h-11 v7 h-12 v-12 h-11 Z" fill="#B7AFA0"/>
+                <rect x="70" y="140" width="6" height="26" fill="#B7AFA0"/>
+                <path d="M60 142 h26 l-13 -16 Z" fill="#B7AFA0"/>
+                <rect x="106" y="150" width="5" height="16" fill="#B7AFA0"/>
+              </g>
+            </svg>
+            <figcaption>转场日 · 涞涞高速穿太行往大同(示意)</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="华严寺大殿与宝塔示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F7F0E1">
+              <circle cx="96" cy="72" r="24" fill="#E7C878" opacity=".85"/>
+              <rect x="110" y="298" width="310" height="44" fill="#CFC7B6"/>
+              <rect x="240" y="342" width="66" height="14" fill="#B7AFA0"/>
+              <rect x="226" y="356" width="94" height="12" fill="#C9C1AE"/>
+              <rect x="142" y="238" width="246" height="60" fill="#A2604E"/>
+              <rect x="150" y="246" width="8" height="52" fill="#8A4B3C"/>
+              <rect x="196" y="246" width="8" height="52" fill="#8A4B3C"/>
+              <rect x="330" y="246" width="8" height="52" fill="#8A4B3C"/>
+              <rect x="372" y="246" width="8" height="52" fill="#8A4B3C"/>
+              <rect x="252" y="258" width="36" height="40" rx="3" fill="#4A463C"/>
+              <circle cx="238" cy="262" r="5" fill="#C8A45C"/>
+              <circle cx="302" cy="262" r="5" fill="#C8A45C"/>
+              <path d="M118 238 Q162 210 265 210 Q368 210 412 238 L402 252 Q340 228 265 228 Q190 228 128 252 Z" fill="#2E4A3C"/>
+              <path d="M148 210 Q212 172 265 172 Q318 172 382 210 L374 222 Q318 192 265 192 Q212 192 156 222 Z" fill="#2E4A3C"/>
+              <path d="M243 174 h44" stroke="#C8A45C" stroke-width="4"/>
+              <circle cx="120" cy="236" r="3.5" fill="#C8A45C"/>
+              <circle cx="410" cy="236" r="3.5" fill="#C8A45C"/>
+              <rect x="450" y="300" width="46" height="42" fill="#B7AFA0"/>
+              <rect x="452" y="270" width="42" height="30" fill="#B7AFA0"/>
+              <rect x="446" y="266" width="54" height="7" fill="#2E4A3C"/>
+              <rect x="457" y="244" width="32" height="22" fill="#B7AFA0"/>
+              <rect x="452" y="240" width="42" height="7" fill="#2E4A3C"/>
+              <rect x="462" y="220" width="22" height="20" fill="#B7AFA0"/>
+              <rect x="457" y="216" width="32" height="7" fill="#2E4A3C"/>
+              <rect x="466" y="200" width="14" height="16" fill="#B7AFA0"/>
+              <rect x="461" y="196" width="24" height="7" fill="#2E4A3C"/>
+              <path d="M473 196 v-16" stroke="#C8A45C" stroke-width="3"/>
+              <circle cx="473" cy="176" r="4" fill="#C8A45C"/>
+              <path d="M84 342 l16 -54 l16 54 Z" fill="#2F5D43" opacity=".85"/>
+              <rect x="98" y="342" width="5" height="14" fill="#4A463C"/>
+              <path d="M542 342 l14 -44 l14 44 Z" fill="#2F5D43" opacity=".7"/>
+              <rect x="554" y="342" width="5" height="12" fill="#4A463C"/>
+            </svg>
+            <figcaption>华严寺 · 辽金大殿与宝塔(示意)</figcaption>
+          </figure>
+        </div>
+        <div class="note-row"><span class="ic">🧭</span><div><b>今日速览:</b>10:00 出发(272km / 4h02m,预留 5h)→ 14:30-15:30 到大同 → 入住 → 15:45 华严寺 → 傍晚九龙壁+鼓楼 → 18:30 龙聚祥晚餐 → 20:00 古城夜游。</div></div>
+        <div class="note-row"><span class="ic">🎯</span><div><b>今日必玩:</b>华严寺(辽金巨刹、合掌露齿菩萨,安顿好就去);古城夜游第一晚(鼓楼东/西街亮灯+城墙夜色)。</div></div>
+        <div class="note-row"><span class="ic">✂️</span><div><b>可舍(砍它换什么):</b>九龙壁(到得晚先看华严寺——它就在古城里,10/5 顺路补,零成本);代王府夜演(场次票价当日为准,想早睡就砍);清西陵加站(除非 08:00 出发,否则别惦记)。</div></div>
+        <div class="slot"><div class="slot-time">07:30</div><div class="slot-body"><b>早餐 + 装车</b>:民宿早餐(乡韵约 ¥10/人)或水镇早餐店;行李装车,别落充电器。</div></div>
+        <div class="slot"><div class="slot-time">10:00</div><div class="slot-body"><b>出发(转场日)</b>:水镇 → G9511 涞涞(紫荆关隧道群)→ G18 荣乌 → 浑源枢纽 → S45 天黎 → S30 孙右 → 大同东;272km,正常 4h02m,国庆预留 5h。沿途涞源一带服务区简餐当午饭(正餐留给大同晚上);想加清西陵的 08:00 出发版见备选区。</div></div>
+        <div class="slot"><div class="slot-time">14:30-15:30</div><div class="slot-body"><b>到大同 + 入住</b>:古城圈酒店(6 家实时价在住宿区);<b>车停酒店不挪窝</b>,古城里靠步行+打车。</div></div>
+        <div class="slot"><div class="slot-time">15:45</div><div class="slot-body"><b>华严寺(今日锚点)</b>:辽金巨刹,合掌露齿菩萨「东方维纳斯」;登宝塔 +10;8:30-17:30 前后——先看大殿,别卡在闭门前 20 分钟。</div></div>
+        <div class="slot"><div class="slot-time">17:00</div><div class="slot-body"><b>九龙壁 + 鼓楼/四牌楼</b>:和阳街遛达到鼓楼;九龙壁来不及就顺延到 10/5(它就在古城里,零成本)。</div></div>
+        <div class="slot"><div class="slot-time">18:30</div><div class="slot-body"><b>晚餐</b>:龙聚祥烧麦馆(鼓楼店)——羊肉雪花烧麦、百花烧麦;饭点排队,可错峰或提前取号。更多选择在美食清单。</div></div>
+        <div class="slot"><div class="slot-time">20:00</div><div class="slot-body"><b>古城夜游(第一晚)</b>:鼓楼东/西街亮灯、城墙夜色;累了就收,10/5 云冈才是重头。</div></div>
+        <div class="note-row"><span class="ic">🚇</span><div><b>今日交通:</b>272km 转场(正常 4h02m,预留 5h);到大同后车停酒店,市内步行+打车。</div></div>
+        <div class="note-row photo"><span class="ic">📷</span><div><b>今日拍:</b>傍晚从武定门/和阳门进城,街巷+鼓楼夜景;华严寺屋檐与宝塔。</div></div>
+        <div class="note-row"><span class="ic">🛏</span><div><b>住:</b>大同古城圈两晚——6 家实时价与怎么选见住宿区(卡 400 预算看福仁居)。</div></div>
+        <div class="note-row"><span class="ic">🅿️</span><div><b>停车:</b>到店后确认车位,车停酒店不挪窝;备选华严寺地下停车场(约 20 元/天封顶)。</div></div>
+        <div class="warn-line"><b>🛟 Plan B:</b>下午想更满 → 08:00 出发加清西陵(顺路,见备选区);不想赶 → 服务区慢慢开,15:30 前到大同即可。</div>
+      </div>
+    </section>
+    <section id="day3">
+      <div class="day">
+        <div class="day-head">
+          <span class="day-idx">DAY 3 · 10/5(周一)</span>
+          <h3>云冈石窟 + 大同古城深度</h3>
+          <span class="today-badge">● 今天</span>
+        </div>
+        <div class="photos">
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="云冈石窟大佛示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#D9CFBD">
+              <path d="M0 70 h600 M0 130 h600 M0 190 h600" stroke="#C7BBA6" stroke-width="2" opacity=".5"/>
+              <path d="M36 0 V400 M564 0 V400" stroke="#C7BBA6" stroke-width="2" opacity=".5"/>
+              <path d="M56 400 L56 306 Q56 272 92 272 Q128 272 128 306 L128 400 Z" fill="#C7BBA6"/>
+              <circle cx="92" cy="300" r="12" fill="#8A7A63"/>
+              <path d="M92 312 q-18 6 -20 30 h40 q-2 -24 -20 -30 Z" fill="#8A7A63"/>
+              <path d="M472 400 L472 306 Q472 272 508 272 Q544 272 544 306 L544 400 Z" fill="#C7BBA6"/>
+              <circle cx="508" cy="300" r="12" fill="#8A7A63"/>
+              <path d="M508 312 q-18 6 -20 30 h40 q-2 -24 -20 -30 Z" fill="#8A7A63"/>
+              <path d="M166 400 L166 214 Q166 118 300 118 Q434 118 434 214 L434 400 Z" fill="#C7BBA6"/>
+              <path d="M166 400 L166 214 Q166 118 300 118 Q434 118 434 214 L434 400" fill="none" stroke="#B0A48C" stroke-width="10"/>
+              <circle cx="300" cy="206" r="52" fill="none" stroke="#C8A45C" stroke-width="3" opacity=".8"/>
+              <circle cx="300" cy="172" r="11" fill="#8A7A63"/>
+              <circle cx="300" cy="208" r="34" fill="#8A7A63"/>
+              <path d="M266 200 q-10 18 3 32 M334 200 q10 18 -3 32" stroke="#8A7A63" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <path d="M300 242 q-72 10 -88 64 q-6 20 0 36 L388 342 q6 -16 0 -36 q-16 -54 -88 -64 Z" fill="#8A7A63"/>
+              <path d="M258 306 q42 14 84 0 l-6 20 q-36 12 -72 0 Z" fill="#7A6B55"/>
+              <path d="M214 342 q86 26 172 0 L382 376 L218 376 Z" fill="#8A7A63"/>
+              <rect x="194" y="376" width="212" height="16" rx="7" fill="#B0A48C"/>
+              <rect x="84" y="378" width="140" height="10" rx="4" fill="#B0A48C" opacity=".7"/>
+              <rect x="376" y="378" width="140" height="10" rx="4" fill="#B0A48C" opacity=".7"/>
+              <circle cx="150" cy="360" r="3" fill="#B0A48C"/><circle cx="450" cy="360" r="3" fill="#B0A48C"/>
+            </svg>
+            <figcaption>云冈石窟 · 第 20 窟露天大佛(示意)</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="大同城墙日落示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#EFDDBE">
+              <defs><linearGradient id="sk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2E4CC"/><stop offset="1" stop-color="#E8C179"/></linearGradient></defs>
+              <rect width="600" height="400" fill="url(#sk1)"/>
+              <circle cx="368" cy="256" r="66" fill="#E2A94F" opacity=".25"/>
+              <circle cx="368" cy="256" r="44" fill="#E2A94F"/>
+              <path d="M120 120 q8 -8 16 0 M146 106 q8 -8 16 0 M104 96 q8 -8 16 0" stroke="#8A6D1F" stroke-width="2.5" fill="none" opacity=".5"/>
+              <rect x="392" y="236" width="74" height="76" fill="#3E4A40"/>
+              <path d="M376 240 L429 200 L482 240 Z" fill="#3E4A40"/>
+              <rect x="406" y="196" width="46" height="32" fill="#3E4A40"/>
+              <path d="M396 198 L429 172 L462 198 Z" fill="#3E4A40"/>
+              <path d="M0 400 V312 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 V400 Z" fill="#3E4A40"/>
+              <circle cx="300" cy="292" r="6" fill="#1C1B17"/>
+              <rect x="294" y="298" width="12" height="16" rx="5" fill="#1C1B17"/>
+              <circle cx="322" cy="294" r="5.5" fill="#1C1B17"/>
+              <rect x="317" y="299" width="10" height="15" rx="4" fill="#1C1B17"/>
+              <rect x="330" y="286" width="10" height="7" rx="2" fill="#1C1B17"/>
+            </svg>
+            <figcaption>古城墙 · 日落金光与亮灯(示意)</figcaption>
+          </figure>
+        </div>
+        <div class="note-row"><span class="ic">🧭</span><div><b>今日速览:</b>07:00 早餐 → 08:00-08:30 出发去云冈 → 09:00 云冈(玩 3.5-4h)→ 13:00 回城午餐 → 15:00 古城补漏/午歇 → 17:00 城墙日落+夜景 → 19:00 晚餐。</div></div>
+        <div class="note-row"><span class="ic">🎯</span><div><b>今日必玩:</b>云冈石窟早场(9:30 前避团);城墙日落+夜景(全天高光,错过就废);华严寺若 10/4 没看成 → 10/5 补。</div></div>
+        <div class="note-row"><span class="ic">✂️</span><div><b>可舍(砍它换什么):</b>善化寺(免费/40 两说,赶时间跳过);登华严寺宝塔(+10,排长队就放弃);九龙壁(如 10/4 已看);大同市博物馆(晴天是可舍项——雨天反而变主线,见应急)。</div></div>
+        <div class="slot"><div class="slot-time">07:00</div><div class="slot-body"><b>早餐</b>:东方削面 / 喜晋道面馆(华严寺广场);或清真帅府街羊杂(7:00-15:00,卖完即止)。</div></div>
+        <div class="slot"><div class="slot-time">08:00-08:30</div><div class="slot-body"><b>出发去云冈</b>:18.8km,35-55min;自驾 8:30 前进场最稳,或打车(单程 35-50)。三种方式对比在路程区。</div></div>
+        <div class="slot"><div class="slot-time">09:00</div><div class="slot-body"><b>云冈石窟(本日锚点)</b>:第 20 窟露天大佛 + 第 5/6 窟精华;国庆 6:30-18:00 开放;9 点前进场避团,玩 3.5-4h。</div></div>
+        <div class="slot"><div class="slot-time">13:00</div><div class="slot-body"><b>回城午餐</b>:二板刀削面(小南街 30 年老店,必点炸豆腐)或凯鸽酒楼;大店 14:30 后闭餐,赶在 14:00 前落座。更多选择在美食清单。</div></div>
+        <div class="slot"><div class="slot-time">15:00</div><div class="slot-body"><b>古城补漏/午歇</b>:华严寺补漏(如 10/4 没看)/ 善化寺;或回酒店午歇,留体力给傍晚。</div></div>
+        <div class="slot"><div class="slot-time">17:00</div><div class="slot-body"><b>城墙日落 + 夜景(全天高光)</b>:免费,7:00-22:00;永泰门/和阳门就近登城;日落金光 → 亮灯。站城墙上会冷,帽子手套带上。</div></div>
+        <div class="slot"><div class="slot-time">19:00</div><div class="slot-body"><b>晚餐</b>:凤临阁(提前 5-6h 电话取号)或龙聚祥/紫泥369;吃完帅府街消食(兔头宵夜随意,见美食清单)。</div></div>
+        <div class="note-row"><span class="ic">🚇</span><div><b>今日交通:</b>去云冈三方式(自驾/打车/公交)对比表在路程区;古城内全步行。</div></div>
+        <div class="note-row photo"><span class="ic">📷</span><div><b>今日拍:</b>云冈 20 窟大佛(上午侧光)、华严寺天宫楼阁、城墙日落金光、鼓楼夜景。</div></div>
+        <div class="note-row"><span class="ic">🛏</span><div><b>住:</b>大同第 2 晚(同上,不挪窝)。</div></div>
+        <div class="note-row"><span class="ic">🅿️</span><div><b>停车:</b>云冈停车场约 10 元;或打车去、车留酒店;古城段可停华严寺地下停车场(约 20 元/天封顶)。</div></div>
+        <div class="warn-line"><b>🛟 Plan B:</b>云冈没约上 → 早刷小程序回流票(有,但别赌),线下应急票限量不可依赖;真约不上 → 10/5 改「博物馆+古城深度日」,云冈留给下次。</div>
+      </div>
+    </section>
+    <section id="day4">
+      <div class="day">
+        <div class="day-head">
+          <span class="day-idx">DAY 4 · 10/6(周二)</span>
+          <h3>返程 · 大同 → 塘沽(487km)</h3>
+          <span class="today-badge">● 今天</span>
+        </div>
+        <div class="photos">
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="返程高速示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F4EFE2">
+              <circle cx="500" cy="84" r="40" fill="#E7C878" opacity=".16"/>
+              <circle cx="500" cy="84" r="24" fill="#E7C878"/>
+              <path d="M0 230 L120 180 L230 226 L360 172 L480 224 L560 196 L600 218 L600 300 L0 300 Z" fill="#DCE4D9"/>
+              <path d="M0 258 L150 224 L300 262 L450 220 L600 254 L600 320 L0 320 Z" fill="#C9D6C6"/>
+              <path d="M0 268 C140 264 300 292 420 330 C490 352 550 364 600 368 L600 398 C540 394 480 382 405 356 C290 318 150 294 0 298 Z" fill="#E2DCCE"/>
+              <path d="M10 282 C150 278 300 304 420 342 C500 366 550 376 592 380" stroke="#C8A45C" stroke-width="3" stroke-dasharray="14 12" fill="none" opacity=".8"/>
+              <g transform="translate(300,300)">
+                <rect x="0" y="8" width="54" height="17" rx="8" fill="#2F5D43"/>
+                <path d="M8 8 L14 -3 L38 -3 L44 8 Z" fill="#2F5D43"/>
+                <rect x="15" y="0" width="20" height="8" rx="3" fill="#DCE4D9"/>
+                <circle cx="12" cy="27" r="6" fill="#1C1B17"/>
+                <circle cx="42" cy="27" r="6" fill="#1C1B17"/>
+                <path d="M-8 16 h-16 M-8 22 h-24" stroke="#2F5D43" stroke-width="2.5" opacity=".45"/>
+              </g>
+              <g transform="translate(60,236)">
+                <rect x="0" y="0" width="44" height="26" rx="3" fill="#2F5D43" opacity=".9"/>
+                <path d="M0 0 L22 -12 L44 0 Z" fill="#2F5D43"/>
+                <rect x="8" y="8" width="10" height="10" fill="#F4EFE2" opacity=".8"/>
+                <rect x="26" y="8" width="10" height="10" fill="#F4EFE2" opacity=".8"/>
+              </g>
+            </svg>
+            <figcaption>返程 · 487km 一路回津(示意)</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 600 400" role="img" aria-label="城墙晨光示意" style="display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#F6E9D4">
+              <defs><linearGradient id="sk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EDDC"/><stop offset="1" stop-color="#F0CFA0"/></linearGradient></defs>
+              <rect width="600" height="400" fill="url(#sk2)"/>
+              <circle cx="300" cy="252" r="86" fill="#E8B960" opacity=".22"/>
+              <circle cx="300" cy="252" r="48" fill="#E8B960"/>
+              <path d="M150 150 q8 -8 16 0 M178 136 q8 -8 16 0 M452 130 q8 -8 16 0 M480 146 q8 -8 16 0" stroke="#8A6D1F" stroke-width="2.5" fill="none" opacity=".45"/>
+              <path d="M520 236 l4 -30 h6 v-14 h5 v14 h5 v-14 h5 v14 h5 v-14 h6 v14 h6 v30 h6 v14 h-54 Z" fill="#B7AFA0" opacity=".75"/>
+              <path d="M0 400 V316 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 h20 v-14 h40 v14 h40 V400 Z" fill="#4A554A"/>
+              <rect x="238" y="240" width="124" height="76" fill="#3E4A40"/>
+              <path d="M222 244 L300 202 L378 244 Z" fill="#3E4A40"/>
+              <path d="M276 268 q24 -26 48 0 v48 h-48 Z" fill="#26332C"/>
+              <path d="M270 268 q30 -34 60 0" fill="none" stroke="#C8A45C" stroke-width="3" opacity=".6"/>
+              <circle cx="176" cy="322" r="8" fill="#1C1B17"/>
+              <rect x="166" y="332" width="20" height="26" rx="8" fill="#1C1B17"/>
+              <path d="M188 336 L204 322" stroke="#1C1B17" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="212" cy="326" r="7" fill="#1C1B17"/>
+              <rect x="204" y="335" width="17" height="23" rx="7" fill="#1C1B17"/>
+              <path d="M204 344 q-10 8 -12 18" stroke="#1C1B17" stroke-width="5" stroke-linecap="round" fill="none"/>
+            </svg>
+            <figcaption>大同 · 城墙晨光,后会有期(示意)</figcaption>
+          </figure>
+        </div>
+        <div class="note-row"><span class="ic">🧭</span><div><b>今日速览:</b>07:30 早餐装车 → 08:30 满油+检查 → 09:00 出发 → 12:30 服务区午餐 → 16:30-17:30 到家(睡饱版 10:00 出发,17:30-18:30 到)。</div></div>
+        <div class="note-row"><span class="ic">🎯</span><div><b>今日必做:</b>09:00 前上高速(返程高峰日);出发前加满油、查胎压玻璃水。</div></div>
+        <div class="note-row"><span class="ic">✂️</span><div><b>可舍(砍它换什么):</b>所有晨间加戏——想再逛就城墙上走一圈(7:00 开放),但 10:00 是出发死线(10:00 出发版 17:30-18:30 到家)。</div></div>
+        <div class="slot"><div class="slot-time">07:30</div><div class="slot-body"><b>早餐 + 装车</b>:酒店含早(汉庭/如家/丽柏)或古城随便一碗面;行李装车,房间再扫一眼。</div></div>
+        <div class="slot"><div class="slot-time">08:30</div><div class="slot-body"><b>满油 + 出发前检查</b>:市区加满油、查胎压玻璃水;ETC 确认正常。</div></div>
+        <div class="slot"><div class="slot-time">09:00</div><div class="slot-body"><b>出发返程</b>:御河西路 → S30 孙右 → S45 天黎 → 浑源枢纽 → G18 荣乌(驿马岭→涞源)→ S3700 津雄 → G2 京沪 → S50 津晋 → 塘沽;487km,正常 5h56m,国庆预留 7h。</div></div>
+        <div class="slot"><div class="slot-time">12:30</div><div class="slot-body"><b>途中午餐</b>:灵丘/涞源一带服务区简餐;两人轮换开、多歇。</div></div>
+        <div class="slot"><div class="slot-time">16:30-17:30</div><div class="slot-body"><b>到家</b>:10/6 是返程高峰日,出发早就不堵;到家吃晚饭最香。</div></div>
+        <div class="note-row"><span class="ic">🚇</span><div><b>今日交通:</b>487km 返程(正常 5h56m,预留 7h);两人轮换开,服务区多歇。</div></div>
+        <div class="note-row photo"><span class="ic">📷</span><div><b>今日拍:</b>出城前看一眼城墙晨光;路上专心开车不拍。</div></div>
+        <div class="note-row"><span class="ic">🛏</span><div><b>住:</b>到家。退房前检查床头/插座/浴室别落东西。</div></div>
+        <div class="note-row"><span class="ic">🅿️</span><div><b>停车:</b>酒店装车即走;服务区停靠时锁车,随身包带好。</div></div>
+        <div class="warn-line"><b>🛟 Plan B:</b>磨蹭到 10:00 才出发 → 照走不误,17:30-18:30 到家;若午后仍在涞源以北且发困 → 服务区多歇不硬撑。</div>
+      </div>
+    </section>
+    <section id="boost">
+      <div class="eyebrow">弹性 · 必玩 vs 可舍</div>
+      <h2>备选与弹性取舍</h2>
+      <p class="lead">这趟的「锚点」只有 4 件:易水湖游船(15:30 死线)、华严寺、云冈石窟、城墙日落。每天保住 1-2 个锚点就不白来,其余全是加分项、层层可舍。</p>
+      <h3 style="margin-top:20px;font-size:1.05rem">✂️ 整体落后时,按这个顺序砍</h3>
+      <div class="tips">
+        <div class="tip"><p><b>先砍九龙壁 / 善化寺</b>——都在古城步行圈,改到任意一天顺路补,零成本。</p></div>
+        <div class="tip"><p><b>再砍清西陵 / 代王府夜演</b>——本来就是机动项,不去不亏。</p></div>
+        <div class="tip"><p><b>然后砍老子峰栈道</b>——易水湖只保游船,一样看够湖光。</p></div>
+        <div class="tip"><p><b>最后砍水镇打铁花</b>——改早点回民宿休息,保 10/4 的 272km 体力。</p></div>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <h3 style="font-size:1rem">➕ 时间富余才加(加餐池)</h3>
+        <p style="font-size:.88rem;color:var(--ink2);margin-top:6px"><span class="tag">限 08:00 出发</span><b>清西陵</b>:10/4 去程顺路,「西陵立交」下高速,通票 108 元/人,游约 2.5h——只在 08:00 出发版才加,17:00-17:30 照样到大同。</p>
+        <p style="font-size:.88rem;color:var(--ink2);margin-top:10px"><span class="tag">雨天转正</span><b>大同市博物馆</b>(御东):免费需预约,镇馆北魏文物——晴天是可舍项,雨天反而变主线(见应急)。</p>
+      </div>
+      <div class="warn-line">🚫 已评估、明确不排:<b>应县木塔</b>(大同南 70km)——世界三大奇塔之一,但往返+游览 3h+,离行进线远,留给下次专程。</div>
+    </section>
+    <section id="ticket">
+      <div class="eyebrow">票 · 预约</div>
+      <h2>门票与预约</h2>
+      <table class="tb">
+        <tr><th>项目</th><th>价格</th><th>预约/购买</th><th>备注</th></tr>
+        <tr><td><b>易水湖 门船联票</b></td><td>线上约 130-135/人</td><td>携程/美团/抖音</td><td>15:30 停止检票登船</td></tr>
+        <tr><td><b>云冈石窟</b></td><td><b>120/人</b>(学生 60)</td><td>小程序「云冈石窟文旅」/ 公众号「云冈石窟官微」;<b>提前 1-15 天,不可约当日</b></td><td>国庆 10/1-7 开放 6:30-18:00;免票人群也要预约;现场一般不售票</td></tr>
+        <tr><td><b>华严寺</b></td><td>50/人(登宝塔 +10)</td><td>现场 /「古都大同」小程序</td><td>8:30-17:30 前后</td></tr>
+        <tr><td><b>善化寺</b></td><td>免费 / 40 元(两说)</td><td>现场</td><td>以现场为准</td></tr>
+        <tr><td><b>九龙壁</b></td><td>免费 / 10 元(两说)</td><td>现场</td><td>以现场为准</td></tr>
+        <tr><td><b>大同古城墙</b></td><td><b>免费</b>(7:00-22:00)</td><td>无需预约</td><td>2026-06-13 起全时段免费;灯会区或另收费</td></tr>
+        <tr><td><b>代王府</b></td><td>30-50;夜演套票 98 起</td><td>「古都大同」小程序</td><td>场次以当日为准</td></tr>
+      </table>
+      <p style="font-size:.78rem;color:var(--ink3);margin-top:8px">价格为 2026-10-02 联网实查,出行前以官方当日公示为准;善化寺/九龙壁「两说」为公开资料不一致,以现场为准。</p>
+    </section>
+    <section id="tips">
+      <div class="eyebrow">避雷 · 防坑</div>
+      <h2>提示与避雷</h2>
+      <div class="tips">
+        <div class="tip"><p>❌「云冈到了再买票」→ ✅ <b>现场一般不售票且不可约当日票</b>,提前 1 天以上线上约;每天顺手刷小程序回流票。</p></div>
+        <div class="tip"><p>❌ 把车开进古城逛街 → ✅ 主干道堵、车位难找,<b>车停酒店或华严寺地下停车场(约 20 元/天)</b>,市内步行+打车。</p></div>
+        <div class="tip"><p>❌ 下午三点找馆子吃正餐 → ✅ 大店全在闭餐休息(14:30-17:30),安排面馆/烧麦/凉粉,或干脆错峰。</p></div>
+        <div class="tip"><p>❌ 凤临阁直接冲 → ✅ 排队极狠且口碑两极,想打卡提前 5-6h 电话取号,或换龙聚祥。</p></div>
+        <div class="tip"><p>❌ 按大同白天 14-18℃ 收拾行李 → ✅ 夜里 <b>-2℃</b>:羽绒服/秋裤/帽子手套,城墙看日落站着不动会更冷。</p></div>
+        <div class="tip"><p>❌ 为「古城里」三个字买单 → ✅ 临主干道/仿古街的房夜市噪音大、旺季溢价狠;北侧民宿区离主要景点 1.2km,订前看清位置。</p></div>
+        <div class="tip"><p>❌ 景区门口黑车/不打表 → ✅ 用打车软件叫车或要求打表(起步价 6-7 元两说);火车站、景区口拉客的一律不理。</p></div>
+        <div class="tip"><p>❌ 古城文创店买特产 → ✅ 大同黄花/阳高杏脯/广灵豆腐干,去市区超市,便宜三成。</p></div>
+        <div class="tip"><p>❌ 10/6 睡到自然醒再走 → ✅ 返程高峰日,9 点前上高速,服务区多歇。</p></div>
+      </div>
+    </section>
+    <section id="stay">
+      <div class="eyebrow">住 · 3 晚</div>
+      <h2>住宿</h2>
+      <h3 style="margin-top:16px;font-size:1.05rem">10/3 晚 · 易水湖/太行水镇(民宿)</h3>
+      <table class="tb">
+        <tr><th>民宿</th><th>参考价</th><th>亮点</th><th>备注</th></tr>
+        <tr><td><b>乡韵民宿</b>(太行水镇店)</td><td>~¥250</td><td>距水镇 200m,9.7 分,可送码头,早餐 ¥10</td><td>口碑稳</td></tr>
+        <tr><td><b>雨轩 · 精品民宿</b></td><td>~¥250-350(估算)</td><td>安格庄村,4.9 分,大床房带阳台,炖大鱼,免费停车</td><td>适合情侣</td></tr>
+        <tr><td><b>青逸民宿</b></td><td>~¥250-350(估算)</td><td>安格庄村,4.9 分,原木风,接送</td><td>出片</td></tr>
+        <tr><td><b>风清扬民宿</b>(水镇内)</td><td>询价</td><td>星空投影房</td><td>氛围加分</td></tr>
+        <tr><td><b>湖边农家院</b></td><td>¥100-150</td><td>常含早晚两餐</td><td>省钱,条件朴素</td></tr>
+      </table>
+      <p style="font-size:.78rem;color:var(--ink3);margin-top:8px">公开平台参考价(2026-10-02 查),需携程/美团自查房态;订房四问:大床 / 热水暖气 / 停车位 / 离大坝码头多远。</p>
+      <h3 style="margin-top:26px;font-size:1.05rem">10/4-10/5 两晚 · 大同(实时价,可直接下单)</h3>
+      <p style="font-size:.88rem;color:var(--ink2);margin-top:8px"><b>住哪合理:</b>首选古城内/城墙边(鼓楼—华严寺圈)——景点和餐厅都在步行圈,晚上吃完直接溜达回房;<b>古城外并不更便宜</b>:御东/南站新区实测价反而更高(希尔顿惠庭 ¥696.5、汉庭南站 ¥660、美豪丽致 ¥543),进城还要 10-20 分钟车程。<b>避雷:</b>① 别为「古城里」三个字买单——临主干道/仿古街的房晚上夜市噪音大、旺季溢价狠;② 古城北侧民宿聚集区离主要景点约 1.2km(景点 95% 集中在南侧);③ 自驾务必确认停车场。</p>
+      <table class="tb">
+        <tr><th>酒店</th><th>房型</th><th>价格/晚</th><th>位置</th><th>取消政策</th></tr>
+        <tr><td><b>福仁居</b>(武都福仁居)</td><td>臻选双床 28㎡</td><td><b>¥391 起</b>(悦享 ¥411/1.35 米床 ¥417/商务 ¥437)</td><td>古城内南侧,近善化寺;车位需确认</td><td>免取至 10/3 18:00</td></tr>
+        <tr><td><b>尚客优</b>(大同古城店)</td><td>智能高级大床</td><td><b>¥440</b>(舒适 ¥466)</td><td>云中路,古城西侧约 1km;✅ 有停车场</td><td>免取至 10/3 00:00</td></tr>
+        <tr><td><b>尚客优</b>(古城西环路店)</td><td>智能客控大床</td><td>¥437-445(¥437-438 需等确认)</td><td>西环路,古城西南;✅ 有停车场</td><td>免取至 10/3 00:00 或 18:00</td></tr>
+        <tr><td><b>汉庭</b>(大同站·古城武定北门店)</td><td>高级大床,含双早</td><td><b>¥564</b>(¥553 需等确认)</td><td>大同站/武定门西,进城约 1km;车位下单时确认</td><td><span class="tag warn">免取 10/2 23:00 截止</span></td></tr>
+        <tr><td><b>如家</b>(大同古城西门店)</td><td>大床·全屋智能,含双早</td><td><b>¥599</b>(¥629 含早/安心睡 ¥653)</td><td>古城西门(清远门);车位下单时确认</td><td>免取至 10/3 00:00</td></tr>
+        <tr><td>尚客优(煤校店,不推荐)</td><td>—</td><td>¥349.5</td><td>云冈区,离古城 10km;❌ 无停车场</td><td>—</td></tr>
+      </table>
+      <p style="font-size:.78rem;color:var(--ink3);margin-top:8px">价格为渠道实时报价、随下单量浮动(2026-10-02 同日两次查询:福仁居在 ¥391-417 区间浮动,其余一致);<b>以下单页为准</b>。</p>
+      <div class="card" style="margin-top:16px">
+        <h3 style="font-size:1rem">升级档(想住舒服点)</h3>
+        <table class="tb">
+          <tr><th>酒店</th><th>价格/晚</th><th>说明</th></tr>
+          <tr><td><b>丽柏酒店(大同古城店)</b>·4 星</td><td>¥642 含双早</td><td>和阳门,部分房型可看古城墙;高级 ¥673、景观 ¥721</td></tr>
+          <tr><td>大同魏都国际酒店 · 5 星</td><td>¥661</td><td>迎宾街老牌五星,含泳池</td></tr>
+          <tr><td>希尔顿惠庭(御东)</td><td>¥696.5</td><td>离古城 10 分钟车程</td></tr>
+          <tr><td>美豪丽致(南站)</td><td>¥543</td><td>离古城远,不推荐</td></tr>
+        </table>
+        <p style="font-size:.78rem;color:var(--ink3);margin-top:8px">星程 ¥856、建国璞隐 ¥865、福朋喜来登 ¥1,210.5——国庆溢价明显,不推荐。</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem">古城网红民宿(C 类,需携程/美团自查)</h3>
+        <p style="font-size:.84rem;color:var(--ink2);margin-top:6px">玩途民宿(武定门内,4.9 分,免费路边位+院内预约车位)、花築·瀾竹庭(东南邑和阳里,步行 2-3 分钟上城墙,免费固定地下车位)、璞宿裏·设计师民宿(北门,4.7 分,地下停车场)、云中超然阁(文庙旁,2025 新开,自有地下车位)、北魏雲棲(北城墙,设计师民宿,私人停车场)、老城根·黛瓦星檐(代王府旁,新中式观景四合院)、和阳客栈(和阳门旁,门口免费停车)、梧桐格客栈(华严寺对面 100m,自费停华严寺地下停车场约 20 元/天)。</p>
+        <p style="font-size:.78rem;color:var(--ink3);margin-top:8px">这些民宿渠道无实时库存 ≠ 满房;国庆预计 400-600,想住四合院氛围优先查携程。</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem">订房入口(实时价页,联网时点击)</h3>
+        <p style="font-size:.86rem;line-height:2.2">
+          <a href="https://rollinggo.cn/pages/hotel/detail/index?id=2265422&checkInDate=2026-10-04&checkOutDate=2026-10-06&roomCount=1&adultCount=2" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">福仁居(¥391 起)</a> ·
+          <a href="https://rollinggo.cn/pages/hotel/detail/index?id=2332760&checkInDate=2026-10-04&checkOutDate=2026-10-06&roomCount=1&adultCount=2" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">尚客优古城店(¥440)</a> ·
+          <a href="https://rollinggo.cn/pages/hotel/detail/index?id=2283909&checkInDate=2026-10-04&checkOutDate=2026-10-06&roomCount=1&adultCount=2" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">尚客优西环路店(¥437-445)</a> ·
+          <a href="https://rollinggo.cn/pages/hotel/detail/index?id=1580684&checkInDate=2026-10-04&checkOutDate=2026-10-06&roomCount=1&adultCount=2" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">汉庭武定北门店(¥564 含早)</a> ·
+          <a href="https://rollinggo.cn/pages/hotel/detail/index?id=2519023&checkInDate=2026-10-04&checkOutDate=2026-10-06&roomCount=1&adultCount=2" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">如家古城西门店(¥599 含早)</a> ·
+          <a href="https://rollinggo.cn/pages/hotel/detail/index?id=2298202&checkInDate=2026-10-04&checkOutDate=2026-10-06&roomCount=1&adultCount=2" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">丽柏古城店(¥642 含早)</a>
+        </p>
+        <p style="font-size:.78rem;color:var(--ink3);margin-top:8px">离线打不开链接属正常;下单前顺手和携程/美团比个价——所有预订与支付请你们本人完成。</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem">怎么选(直球建议)</h3>
+        <p style="font-size:.88rem;color:var(--ink2);margin-top:6px">· <b>卡 400 预算:福仁居双床 ¥391-417</b>(古城内、免取到 10/3)——能接受双床就它;<br>· <b>要大床+停车稳:尚客优古城店 ¥440</b>(智能大床、有停车场);<br>· <b>要品牌含双早:汉庭 ¥564</b>(⚠️ 免费取消 10/2 23:00 截止,想保退路就在 10/2 内定)或如家 ¥599;<br>· <b>要氛围出片:</b>优先查 C 类四合院民宿,或丽柏景观大床 ¥721 一步到位。</p>
+      </div>
+    </section>
+    <section id="cost">
+      <div class="eyebrow">钱 · 2 人合计</div>
+      <h2>预算</h2>
+      <div class="stats">
+        <div class="stat"><div class="n">¥3,400-4,800</div><div class="l">2 人合计(估算)</div></div>
+        <div class="stat"><div class="n">¥1,700-2,400</div><div class="l">人均</div></div>
+        <div class="stat"><div class="n">¥0</div><div class="l">过路费(国庆免费)</div></div>
+      </div>
+      <table class="tb" style="margin-top:20px">
+        <tr><th>项目</th><th>估算</th><th>说明</th></tr>
+        <tr><td>门票/体验</td><td>¥600-700</td><td>易水湖 260 + 云冈 240 + 华严寺 100 + 零头</td></tr>
+        <tr><td>住宿 ×3 晚</td><td>¥1,070-1,500</td><td>易水湖 250-350 + 大同 2 晚 782(福仁居 391×2)-880(尚客优 440×2);汉庭含早 1,128、丽柏 1,284 上浮</td></tr>
+        <tr><td>餐饮 ×4 天</td><td>¥800-1,100</td><td>大同物价友好,吃好不贵</td></tr>
+        <tr><td>油费</td><td>~¥650(估算)</td><td>~1070km × 8L/100km × 7.5 元/L</td></tr>
+        <tr><td>过路费</td><td><b>¥0</b></td><td>国庆免费 10/1-10/7(见路程区)</td></tr>
+        <tr><td>停车 + 市内打车</td><td>¥80-180</td><td>各景区停车约 10-20/天;打车去云冈往返 80-100(自驾则省下)</td></tr>
+        <tr><td>机动(特产/零食)</td><td>¥200-400</td><td>—</td></tr>
+        <tr><td><b>合计</b></td><td><b>约 ¥3,400-4,800</b></td><td>人均 ¥1,700-2,400</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">💡</span><div><b>省钱杠杆:</b>住福仁居不加档(-100~400)+ 云冈坐 3 路公交(1 元)代替打车 + 古城内全靠走(0 交通费)。</div></div>
+    </section>
+    <section id="sos">
+      <div class="eyebrow">应急 · 兜底</div>
+      <h2>应急</h2>
+      <div class="sos-grid">
+        <div class="sos"><h4>🚗 事故 / 故障</h4><p>车靠边 → 双闪 → 三角牌 → 人撤离;报警 122,高速救援 12122,急救 120。人先撤到护栏外,不站车流里修车。</p></div>
+        <div class="sos"><h4>🎫 云冈没约上</h4><p>早上刷小程序回流票(有,但别赌);线下应急票限量不可依赖。真约不上改「博物馆+古城深度日」——见 DAY 3 的 Plan B。</p></div>
+        <div class="sos"><h4>🌧 雨天预案</h4><p>云冈照玩(窟廊避雨);古城户外段改「大同市博物馆」(御东,免费需预约)+ 华严寺/九龙壁;10/3 天津段小雨,慢开。</p></div>
+        <div class="sos"><h4>⏰ 极端延误</h4><p>过路费 0 一直到 10/7 24:00(以驶离时间为准),行程可整体平移一天,不花过路费。</p></div>
+        <div class="sos"><h4>🤒 身体 / 肠胃</h4><p>常用药带上(感冒/肠胃/晕车);刀削面+兔头偏油辣,适量;夜里 -2℃ 别逞强,帽子手套带上城墙。</p></div>
+        <div class="sos"><h4>🚕 打车纠纷</h4><p>平台内投诉,或 12328 交通运输服务监督电话;黑车不理,上车要求打表(起步价两说,打表为准)。</p></div>
+      </div>
+    </section>
+    <section id="eat">
+      <div class="eyebrow">吃 · 大同是这趟的隐藏彩蛋</div>
+      <h2>美食清单</h2>
+      <table class="tb">
+        <tr><th>顿</th><th>地界</th><th>店</th><th>吃什么</th><th>人均</th></tr>
+        <tr><td>10/3 早</td><td>塘沽/路上</td><td>出发前塘沽解决(或高速服务区)</td><td>简单垫肚,别吃太饱</td><td>—</td></tr>
+        <tr><td>10/3 午</td><td>易县/水镇</td><td>太行水镇美食街;或顺路「闫家驴肉老店」</td><td>炖大鱼、缸炉烧饼;驴肉火烧+杂粥</td><td>30-60</td></tr>
+        <tr><td>10/3 晚</td><td>水镇</td><td>水镇小吃街/民宿餐厅</td><td>当地炖菜、小吃</td><td>40-60</td></tr>
+        <tr><td>10/4 早</td><td>水镇</td><td>民宿早餐(乡韵约 ¥10/人或水镇早餐店)</td><td>吃完上路</td><td>~10</td></tr>
+        <tr><td>10/4 午</td><td>高速</td><td>涞源一带服务区</td><td>简餐(大店 14:30-17:30 闭餐,正餐留给晚上)</td><td>30-50</td></tr>
+        <tr><td>10/4 晚</td><td>古城</td><td>龙聚祥烧麦馆(鼓楼店)</td><td>羊肉雪花烧麦、百花烧麦(饭点排队,可错峰 15:00-16:00)</td><td>60-80</td></tr>
+        <tr><td>10/5 早</td><td>古城</td><td>东方削面/喜晋道面馆(华严寺广场);或清真帅府街羊杂</td><td>刀削面+卤蛋;羊杂割汤配粉条</td><td>10-25</td></tr>
+        <tr><td>10/5 午</td><td>云冈回城</td><td>二板刀削面(小南街,30 年老店)/ 凯鸽酒楼</td><td>削面<b>必点炸豆腐</b>;凯鸽可点半份菜</td><td>20-60</td></tr>
+        <tr><td>10/5 晚</td><td>古城</td><td>凤临阁(百花烧麦,慈禧赐「天下第一笼」)/ 紫泥369 粗粮</td><td>烧麦蘸老陈醋配沙棘汁(凤临阁排队极狠,或改龙聚祥)</td><td>70-110</td></tr>
+        <tr><td>10/6 早</td><td>大同</td><td>酒店含早(汉庭/如家/丽柏)或古城随便一碗面</td><td>吃完就撤</td><td>10-20</td></tr>
+        <tr><td>10/6 午</td><td>高速</td><td>灵丘/涞源服务区</td><td>简餐</td><td>30-50</td></tr>
+        <tr><td>10/6 晚</td><td>塘沽</td><td>到家吃</td><td>回家吃饭最香</td><td>—</td></tr>
+        <tr><td>宵夜 · 随意</td><td>古城·帅府街</td><td>胖来来兔头(帅府街 108 号,30 年老店)/ 刘妈兔头</td><td>麻辣/五香兔头配啤酒,<b>大同辣偏干辣、少点些</b></td><td>~50</td></tr>
+        <tr><td>下午茶 · 随意</td><td>古城</td><td>顺意凉粉;合笙财沙棘冰面包</td><td>凉粉、沙棘冰面包</td><td>10-20</td></tr>
+      </table>
+      <div class="note-row"><span class="ic">🥢</span><div><b>小吃穿插:</b>羊杂当早餐吃(清真帅府街羊杂,人均 14,7:00-15:00、卖完即止;或大众羊杂/郑师傅羊杂馆);<b>夜宵认准帅府街</b>;下午茶认准顺意凉粉/沙棘冰面包。</div></div>
+      <div class="warn-line"><b>铁律:</b>大同正餐馆午市 11:00-14:00、晚市 17:00-21:00,<b>下午 14:30-17:30 大店闭餐休息</b>——这个点只能靠面馆/烧麦馆/凉粉店顶着;节假日大店<b>提前 5-6 小时电话取号</b>。</div>
+    </section>
+    <section id="gift">
+      <div class="eyebrow">带点什么</div>
+      <h2>特产与送礼</h2>
+      <table class="tb">
+        <tr><th>特产</th><th>在哪买</th><th>备注</th></tr>
+        <tr><td><b>大同黄花菜</b>(地理标志)</td><td>市区超市</td><td>轻、好带,送长辈合适</td></tr>
+        <tr><td>阳高杏脯</td><td>超市</td><td>酸甜口</td></tr>
+        <tr><td>广灵豆腐干</td><td>超市</td><td>真空装好带</td></tr>
+        <tr><td>浑源凉粉(现吃)</td><td>古城小吃店</td><td>带不回来,当场吃</td></tr>
+        <tr><td>沙棘汁</td><td>超市</td><td>解腻神器</td></tr>
+      </table>
+      <div class="warn-line">🛍 <b>别在景点门口买</b>——古城文创店比市区超市贵约三成;10/6 出发前顺路超市一站买齐,装后备箱不占地方。</div>
+    </section>
+    <footer style="padding:64px 0 80px;text-align:center">
+      <h2>易水湖 · 大同路书 · 国庆 4 天自驾</h2>
+      <p>天津塘沽河南里出发 · 2026-10-03 至 10-06 · 2 人(情侣)自驾<br>本地单文件 · 无外部依赖 · 断网可打开<br>信息 2026-10-02 联网实查 · 未核实项已标注</p>
+      <p>配图:全部为自绘示意插画(非实景照片——离线单文件不引外部图片);图源:AI 自绘<br>路线与方位已对照真实地图,非等比例、仅供参考</p>
+      <p style="margin-top:18px;font-weight:700">方案仅供参考——安全和开心，才是最重要的。🌕</p>
+    </footer>
+  </div>
+</main>
+<button class="backtop" id="backtop" aria-label="回到顶部">↑</button>
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 1. 当日模式：按今天日期高亮对应行程日 ---------- */
+  var TRIP = { "2026-10-03":"day1", "2026-10-04":"day2", "2026-10-05":"day3", "2026-10-06":"day4" };
+  function todayStr(){
+    var d = new Date();
+    var m = ("0"+(d.getMonth()+1)).slice(-2), day = ("0"+d.getDate()).slice(-2);
+    return d.getFullYear()+"-"+m+"-"+day;
+  }
+  var todayId = TRIP[todayStr()];
+  if (todayId){
+    var sec = document.getElementById(todayId);
+    if (sec){
+      var card = sec.querySelector(".day");
+      if (card) card.classList.add("today");
+      var navA = document.querySelector('.side nav a[href="#'+todayId+'"]');
+      if (navA) navA.innerHTML = '<span class="dot"></span>' + navA.textContent + ' · 今天';
+      function jumpToday(){ lockNav(todayId); sec.scrollIntoView({behavior:"instant", block:"start"}); }
+      /* 布局稳定后再跳（固定延时 300ms 实测落点稳） */
+      if (document.readyState === "complete"){ setTimeout(jumpToday, 300); }
+      else { window.addEventListener("load", function(){ setTimeout(jumpToday, 300); }); }
+    }
+  } else {
+    var prep = document.getElementById("prepCard");
+    if (prep && todayStr() < "2026-10-03") prep.style.border = "2px solid var(--accent)";
+  }
+
+  /* ---------- 2. 字号三档（记忆） ---------- */
+  var FONTS = ["17px","19px","21px"];
+  var fi = 1;
+  try { fi = Math.max(0, Math.min(2, parseInt(localStorage.getItem("yshdt_font"||"1"),10)||0)); } catch(e){}
+  function applyFont(){ document.documentElement.style.setProperty("--fs", FONTS[fi]); }
+  applyFont();
+  function saveFont(){ try{ localStorage.setItem("yshdt_font", String(fi)); }catch(e){} }
+  document.getElementById("fontInc").addEventListener("click", function(){ if(fi<2){fi++;applyFont();saveFont();} });
+  document.getElementById("fontDec").addEventListener("click", function(){ if(fi>0){fi--;applyFont();saveFont();} });
+
+  /* ---------- 3. 打印 ---------- */
+  document.getElementById("printBtn").addEventListener("click", function(){ window.print(); });
+
+  /* ---------- 4. 勾选清单（记忆） ---------- */
+  document.querySelectorAll(".check li").forEach(function(li, i){
+    var box = li.querySelector("input");
+    var key = "yshdt_chk_" + box.id;
+    try { box.checked = localStorage.getItem(key) === "1"; } catch(e){}
+    if (box.checked) li.classList.add("done");
+    li.addEventListener("click", function(ev){
+      if (ev.target.tagName !== "INPUT"){ box.checked = !box.checked; }
+      li.classList.toggle("done", box.checked);
+      try{ localStorage.setItem(key, box.checked ? "1" : "0"); }catch(e){}
+    });
+  });
+
+  /* ---------- 5. 滚动监听：侧栏高亮 + 入场动效 ----------
+     高亮双通道：滚动 = 贴顶窄带 observer；点击/当日跳转 = navLock 目标锁。 */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".side nav a"));
+  var secs = Array.prototype.slice.call(document.querySelectorAll("main section"));
+  var navLock = null, lockTimer = null;
+  function setOn(id){
+    navLinks.forEach(function(a){ a.classList.toggle("on", a.getAttribute("href") === "#"+id); });
+  }
+  function lockNav(id){
+    navLock = id; setOn(id);
+    if (lockTimer) clearTimeout(lockTimer);
+    lockTimer = setTimeout(function(){ navLock = null; }, 1200);
+  }
+  navLinks.forEach(function(a){
+    a.addEventListener("click", function(){ lockNav((a.getAttribute("href") || "").slice(1)); });
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting){
+        en.target.classList.add("in");
+        if (!navLock) setOn(en.target.id);
+      }
+    });
+  }, { rootMargin: "-12% 0px -78% 0px" });
+  secs.forEach(function(s){ io.observe(s); });
+
+  /* ---------- 6. 返回顶部 ---------- */
+  var bt = document.getElementById("backtop");
+  window.addEventListener("scroll", function(){
+    bt.classList.toggle("show", window.scrollY > 600);
+  }, { passive:true });
+  bt.addEventListener("click", function(){ window.scrollTo({ top:0, behavior:"smooth" }); });
+})();
+</script>
+<script>
+/* 兜底：若上方脚本报错导致入场动效未初始化，3 秒后强制显示全部内容 */
+setTimeout(function(){
+  if (!document.querySelector('main section.in')){
+    document.querySelectorAll('main section').forEach(function(s){ s.classList.add('in'); });
+  }
+}, 3000);
+</script>
+</body>
+</html>
